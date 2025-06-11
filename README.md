@@ -27,12 +27,12 @@
     ```
 
 4. Add LassieRAG module to the environment  
-    (1) Clone the project for github  
+    - Clone the project for github  
         ```bash
         git clone https://github.com/yysun0116/LassieRAG.git
         ```
 
-    (2) use editable install  
+    - use editable install  
         ```bash
         uv pip install -e path/to/LassieRAG
         ```
@@ -44,8 +44,8 @@
 
 ## Test Agent framework
 1. Preprocessing of MCP retriver construction  
-    (1) Modified parameters in .env file  
-    (2) Build up Index in OpenSearch vector database  
+    - Modified parameters in .env file  
+    - Build up Index in OpenSearch vector database  
         ```bash
         uv run python3 ./demo/0_retriver_preprocess.py
         ```
