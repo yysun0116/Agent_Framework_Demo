@@ -62,7 +62,7 @@ async def retrieve_fps_rules_db(query: str) -> List[dict]:
     Retrieve information relevant to the user's query from a database containing documents about company work rules. 
 
     Args: 
-        query: the query from user used to retrieve the relevant information in the vector database
+        query: str. the query from user used to retrieve the relevant information in the vector database
     
     Returns:
         List[dict]: The documents relevant to user's query
@@ -77,7 +77,7 @@ async def retrieve_company_introduction_db(query: str) -> List[dict]:
     Retrieve information relevant to the user's query from a database containing documents about company notes and introductions. 
 
     Args: 
-        query: the query from user used to retrieve the relevant information in the vector database
+        query: str. the query from user used to retrieve the relevant information in the vector database
     
     Returns:
         List[dict]: The documents relevant to user's query
@@ -92,7 +92,7 @@ async def retrieve_NSTC_research_project_db(query: str) -> List[dict]:
     Retrieve information relevant to the user's query from a database containing documents about FAQs related to undergraduate student research projects.
 
     Args: 
-        query: the query from user used to retrieve the relevant information in the vector database
+        query: str. the query from user used to retrieve the relevant information in the vector database
     
     Returns:
         List[dict]: The documents relevant to user's query
