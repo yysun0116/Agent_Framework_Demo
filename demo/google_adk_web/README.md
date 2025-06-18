@@ -4,6 +4,6 @@
 2. Update model name in `agent.py` file
 3. run adk web UI and test!
     ```bash
-    cd /Agent_Framework_Demo/demo/google_adk/web
+    cd /Agent_Framework_Demo/demo/google_adk_web
     adk web
     ```
