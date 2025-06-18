@@ -43,11 +43,11 @@
     ```
 
 ## Test Agent framework
-1. Preprocessing of MCP retriver construction  
+1. Preprocessing of MCP retriever construction  
     - Modified parameters in .env file  
     - Build up Index in OpenSearch vector database  
         ```bash
-        uv run python3 ./demo/0_retriver_preprocess.py
+        uv run python3 ./demo/0_retriever_preprocess.py
         ```
 2. run _demo.ipynb of different agent frameworks  
 
