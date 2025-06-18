@@ -50,3 +50,10 @@
         uv run python3 ./demo/0_retriver_preprocess.py
         ```
 2. run _demo.ipynb of different agent frameworks  
+
+## Demo Scenario
+1. Single agent
+    <img src="images/single_agent_testing_scenario.png" width="100%"/>
+    - With structured output
+    - Tool-use (Retrievers, via MCP)
+    - Multi-turn conversation
