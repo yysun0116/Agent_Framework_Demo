@@ -1,0 +1,1106 @@
+{
+    "session_id": "session_1",
+    "user_id": "user_1",
+    "team_session_id": null,
+    "memory": {
+        "summaries": {},
+        "memories": {},
+        "runs": [
+            {
+                "content": {
+                    "reference": [],
+                    "final_answer": "是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？"
+                },
+                "content_type": "RAGFormat",
+                "event": "RunResponse",
+                "metrics": {
+                    "input_tokens": [
+                        921
+                    ],
+                    "output_tokens": [
+                        65
+                    ],
+                    "total_tokens": [
+                        986
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        921
+                    ],
+                    "completion_tokens": [
+                        65
+                    ],
+                    "time": [
+                        2.607881541999973
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "run_id": "0f36f4d8-25c9-4326-b873-ceba90c77a70",
+                "agent_id": "48d8b1ef-67a0-45c1-bd2b-b97e15453bb8",
+                "session_id": "session_1",
+                "tools": [],
+                "created_at": 1750401651,
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Retrieval-Based Answering: If the question requires specialized or external knowledge, retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n3. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 921,
+                            "output_tokens": 65,
+                            "total_tokens": 986,
+                            "prompt_tokens": 921,
+                            "completion_tokens": 65,
+                            "time": 2.607881541999973
+                        },
+                        "created_at": 1750401692
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        {
+                            "score": 0.7,
+                            "text": "此為依據勞動基準法所訂定的最基準工作時間。\n一、每週工作時數不得超過四十小時。\n二、每日工作時數為八小時。\n三、每日工作時間為\n08:30 開始上班\n12:00 午休及午餐時間\n13:00 下午工作時間開始\n15:00 下午休息時間\n15:15 繼續工作\n17:30 下班\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\n1.\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\n2.\t調整工作時間。\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。"
+                        },
+                        {
+                            "score": 0.3,
+                            "text": "一、同仁因執行公務中受傷之病假，稱為公傷假。\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。"
+                        },
+                        {
+                            "score": 0.2645357,
+                            "text": "一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\n \n請假天數，核准主管權限及事前天數辦法如下：\n請假天數\t事前天數\t核准主管權限\n0<天數≦5\t三天前\t部門主管\n5<天數≦10\t一週前\t處級主管\n天數>10\t兩週前\t業務/事業群總經理\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。"
+                        }
+                    ],
+                    "final_answer": "好的，根據公司規定，請假有幾種不同的種類，像是特休假、事假、婚假等等。請假需要事先填寫請假單，並經主管核定。請假天數不同，核准權限和事前申請天數也不同，詳細資訊如下：\n\n*   0-5天：提前三天向部門主管申請\n*   5-10天：提前一週向處級主管申請\n*   10天以上：提前兩週向業務/事業群總經理申請\n\n如果遇到臨時狀況，當天早上10點前先電話向主管報備，事後再補辦手續。未依規定請假可能會被視同曠職喔。\n\n您想請哪一種假呢？需要我幫您查詢更詳細的規定嗎？"
+                },
+                "content_type": "RAGFormat",
+                "event": "RunResponse",
+                "metrics": {
+                    "input_tokens": [
+                        992,
+                        2182
+                    ],
+                    "output_tokens": [
+                        48,
+                        946
+                    ],
+                    "total_tokens": [
+                        1040,
+                        3128
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        992,
+                        2182
+                    ],
+                    "completion_tokens": [
+                        48,
+                        946
+                    ],
+                    "time": [
+                        1.4836007500000505,
+                        24.696461209000063
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "run_id": "d7b3395f-2756-4392-9523-13679b06fc8b",
+                "agent_id": "48d8b1ef-67a0-45c1-bd2b-b97e15453bb8",
+                "session_id": "session_1",
+                "tools": [
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "tool_call_id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "input_tokens": 0,
+                            "output_tokens": 0,
+                            "total_tokens": 0,
+                            "audio_tokens": 0,
+                            "input_audio_tokens": 0,
+                            "output_audio_tokens": 0,
+                            "cached_tokens": 0,
+                            "reasoning_tokens": 0,
+                            "prompt_tokens": 0,
+                            "completion_tokens": 0,
+                            "prompt_tokens_details": null,
+                            "completion_tokens_details": null,
+                            "additional_metrics": null,
+                            "time": 0.13231099999995877,
+                            "time_to_first_token": null,
+                            "timer": null
+                        },
+                        "created_at": 1750401703
+                    }
+                ],
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=請假規定)"
+                ],
+                "created_at": 1750401651,
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Retrieval-Based Answering: If the question requires specialized or external knowledge, retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n3. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1750401701
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 921,
+                            "output_tokens": 65,
+                            "total_tokens": 986,
+                            "prompt_tokens": 921,
+                            "completion_tokens": 65,
+                            "time": 2.607881541999973
+                        },
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "我想要請假出去玩，有沒有什麼限制？",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401701
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "請假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 992,
+                            "output_tokens": 48,
+                            "total_tokens": 1040,
+                            "prompt_tokens": 992,
+                            "completion_tokens": 48,
+                            "time": 1.4836007500000505
+                        },
+                        "created_at": 1750401701
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.13231099999995877
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.3,\n      \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n    },\n    {\n      \"score\": 0.2645357,\n      \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n    }\n  ],\n  \"final_answer\": \"好的，根據公司規定，請假有幾種不同的種類，像是特休假、事假、婚假等等。請假需要事先填寫請假單，並經主管核定。請假天數不同，核准權限和事前申請天數也不同，詳細資訊如下：\\n\\n*   0-5天：提前三天向部門主管申請\\n*   5-10天：提前一週向處級主管申請\\n*   10天以上：提前兩週向業務/事業群總經理申請\\n\\n如果遇到臨時狀況，當天早上10點前先電話向主管報備，事後再補辦手續。未依規定請假可能會被視同曠職喔。\\n\\n您想請哪一種假呢？需要我幫您查詢更詳細的規定嗎？\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2182,
+                            "output_tokens": 946,
+                            "total_tokens": 3128,
+                            "prompt_tokens": 2182,
+                            "completion_tokens": 946,
+                            "time": 24.696461209000063
+                        },
+                        "created_at": 1750401703
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [],
+                    "final_answer": "是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？"
+                },
+                "content_type": "RAGFormat",
+                "event": "RunResponse",
+                "metrics": {
+                    "input_tokens": [
+                        3137
+                    ],
+                    "output_tokens": [
+                        61
+                    ],
+                    "total_tokens": [
+                        3198
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        3137
+                    ],
+                    "completion_tokens": [
+                        61
+                    ],
+                    "time": [
+                        23.546566625000196
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "run_id": "20d89c15-cc95-47a4-b357-325b3eb07425",
+                "agent_id": "f61f33fd-eb3a-4f0d-9f76-b9191364e68b",
+                "session_id": "session_1",
+                "tools": [],
+                "created_at": 1750401651,
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Retrieval-Based Answering: If the question requires specialized or external knowledge, retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n3. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1750401900
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 921,
+                            "output_tokens": 65,
+                            "total_tokens": 986,
+                            "prompt_tokens": 921,
+                            "completion_tokens": 65,
+                            "time": 2.607881541999973
+                        },
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "我想要請假出去玩，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401701
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "請假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 992,
+                            "output_tokens": 48,
+                            "total_tokens": 1040,
+                            "prompt_tokens": 992,
+                            "completion_tokens": 48,
+                            "time": 1.4836007500000505
+                        },
+                        "created_at": 1750401701
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.13231099999995877
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.3,\n      \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n    },\n    {\n      \"score\": 0.2645357,\n      \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n    }\n  ],\n  \"final_answer\": \"好的，根據公司規定，請假有幾種不同的種類，像是特休假、事假、婚假等等。請假需要事先填寫請假單，並經主管核定。請假天數不同，核准權限和事前申請天數也不同，詳細資訊如下：\\n\\n*   0-5天：提前三天向部門主管申請\\n*   5-10天：提前一週向處級主管申請\\n*   10天以上：提前兩週向業務/事業群總經理申請\\n\\n如果遇到臨時狀況，當天早上10點前先電話向主管報備，事後再補辦手續。未依規定請假可能會被視同曠職喔。\\n\\n您想請哪一種假呢？需要我幫您查詢更詳細的規定嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2182,
+                            "output_tokens": 946,
+                            "total_tokens": 3128,
+                            "prompt_tokens": 2182,
+                            "completion_tokens": 946,
+                            "time": 24.696461209000063
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401900
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3137,
+                            "output_tokens": 61,
+                            "total_tokens": 3198,
+                            "prompt_tokens": 3137,
+                            "completion_tokens": 61,
+                            "time": 23.546566625000196
+                        },
+                        "created_at": 1750401900
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        {
+                            "score": 0.7,
+                            "text": "此為依據勞動基準法所訂定的最基準工作時間。\n一、每週工作時數不得超過四十小時。\n二、每日工作時數為八小時。\n三、每日工作時間為\n08:30 開始上班\n12:00 午休及午餐時間\n13:00 下午工作時間開始\n15:00 下午休息時間\n15:15 繼續工作\n17:30 下班\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\n1.\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\n2.\t調整工作時間。\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。"
+                        },
+                        {
+                            "score": 0.2645357,
+                            "text": "一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\n \n請假天數，核准主管權限及事前天數辦法如下：\n請假天數\t事前天數\t核准主管權限\n0<天數≦5\t三天前\t部門主管\n5<天數≦10\t一週前\t處級主管\n天數>10\t兩週前\t業務/事業群總經理\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。"
+                        }
+                    ],
+                    "final_answer": "您好，公司請假規定如下：\n\n*   **休假種類：** 公司有特休假、事假、婚假等等共十四種休假種類。\n*   **請假流程：** 需要事先填寫請假單或口頭敘明理由，經主管核定。\n*   **事前申請天數：**\n    *   5天以內：提前三天向部門主管申請\n    *   5-10天：提前一週向處級主管申請\n    *   10天以上：提前兩週向業務/事業群總經理申請\n*   **臨時狀況：** 若是臨時狀況，當天早上10點前電話向主管報備，事後再補辦手續。\n\n請問您想請哪一種假呢？"
+                },
+                "content_type": "RAGFormat",
+                "event": "RunResponse",
+                "metrics": {
+                    "input_tokens": [
+                        3208,
+                        4388
+                    ],
+                    "output_tokens": [
+                        48,
+                        798
+                    ],
+                    "total_tokens": [
+                        3256,
+                        5186
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        3208,
+                        4388
+                    ],
+                    "completion_tokens": [
+                        48,
+                        798
+                    ],
+                    "time": [
+                        3.41573362500003,
+                        27.33029020899994
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "run_id": "f84332d2-6f4b-47de-806e-6ab3efd18043",
+                "agent_id": "f61f33fd-eb3a-4f0d-9f76-b9191364e68b",
+                "session_id": "session_1",
+                "tools": [
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "tool_call_id": "USDgoswiS5WjwyBhkQXSGFhziaRpL5mX",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "input_tokens": 0,
+                            "output_tokens": 0,
+                            "total_tokens": 0,
+                            "audio_tokens": 0,
+                            "input_audio_tokens": 0,
+                            "output_audio_tokens": 0,
+                            "cached_tokens": 0,
+                            "reasoning_tokens": 0,
+                            "prompt_tokens": 0,
+                            "completion_tokens": 0,
+                            "prompt_tokens_details": null,
+                            "completion_tokens_details": null,
+                            "additional_metrics": null,
+                            "time": 0.1383950829999776,
+                            "time_to_first_token": null,
+                            "timer": null
+                        },
+                        "created_at": 1750401930
+                    }
+                ],
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=請假規定)"
+                ],
+                "created_at": 1750401651,
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Retrieval-Based Answering: If the question requires specialized or external knowledge, retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n3. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1750401927
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 921,
+                            "output_tokens": 65,
+                            "total_tokens": 986,
+                            "prompt_tokens": 921,
+                            "completion_tokens": 65,
+                            "time": 2.607881541999973
+                        },
+                        "created_at": 1750401692
+                    },
+                    {
+                        "content": "我想要請假出去玩，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401701
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "請假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 992,
+                            "output_tokens": 48,
+                            "total_tokens": 1040,
+                            "prompt_tokens": 992,
+                            "completion_tokens": 48,
+                            "time": 1.4836007500000505
+                        },
+                        "created_at": 1750401701
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.13231099999995877
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.3,\n      \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n    },\n    {\n      \"score\": 0.2645357,\n      \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n    }\n  ],\n  \"final_answer\": \"好的，根據公司規定，請假有幾種不同的種類，像是特休假、事假、婚假等等。請假需要事先填寫請假單，並經主管核定。請假天數不同，核准權限和事前申請天數也不同，詳細資訊如下：\\n\\n*   0-5天：提前三天向部門主管申請\\n*   5-10天：提前一週向處級主管申請\\n*   10天以上：提前兩週向業務/事業群總經理申請\\n\\n如果遇到臨時狀況，當天早上10點前先電話向主管報備，事後再補辦手續。未依規定請假可能會被視同曠職喔。\\n\\n您想請哪一種假呢？需要我幫您查詢更詳細的規定嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2182,
+                            "output_tokens": 946,
+                            "total_tokens": 3128,
+                            "prompt_tokens": 2182,
+                            "completion_tokens": 946,
+                            "time": 24.696461209000063
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401900
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3137,
+                            "output_tokens": 61,
+                            "total_tokens": 3198,
+                            "prompt_tokens": 3137,
+                            "completion_tokens": 61,
+                            "time": 23.546566625000196
+                        },
+                        "created_at": 1750401900
+                    },
+                    {
+                        "content": "我想要請假出去玩，有沒有什麼限制？",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401927
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "USDgoswiS5WjwyBhkQXSGFhziaRpL5mX",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "請假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3208,
+                            "output_tokens": 48,
+                            "total_tokens": 3256,
+                            "prompt_tokens": 3208,
+                            "completion_tokens": 48,
+                            "time": 3.41573362500003
+                        },
+                        "created_at": 1750401927
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "USDgoswiS5WjwyBhkQXSGFhziaRpL5mX",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.1383950829999776
+                        },
+                        "created_at": 1750401930
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.2645357,\n      \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n    }\n  ],\n  \"final_answer\": \"您好，公司請假規定如下：\\n\\n*   **休假種類：** 公司有特休假、事假、婚假等等共十四種休假種類。\\n*   **請假流程：** 需要事先填寫請假單或口頭敘明理由，經主管核定。\\n*   **事前申請天數：**\\n    *   5天以內：提前三天向部門主管申請\\n    *   5-10天：提前一週向處級主管申請\\n    *   10天以上：提前兩週向業務/事業群總經理申請\\n*   **臨時狀況：** 若是臨時狀況，當天早上10點前電話向主管報備，事後再補辦手續。\\n\\n請問您想請哪一種假呢？\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4388,
+                            "output_tokens": 798,
+                            "total_tokens": 5186,
+                            "prompt_tokens": 4388,
+                            "completion_tokens": 798,
+                            "time": 27.33029020899994
+                        },
+                        "created_at": 1750401930
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        {
+                            "score": 0.7,
+                            "text": "此為依據勞動基準法所訂定的最基準工作時間。\n一、每週工作時數不得超過四十小時。\n二、每日工作時數為八小時。\n三、每日工作時間為\n08:30 開始上班\n12:00 午休及午餐時間\n13:00 下午工作時間開始\n15:00 下午休息時間\n15:15 繼續工作\n17:30 下班\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\n1.\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\n2.\t調整工作時間。\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。"
+                        },
+                        {
+                            "score": 0.30635563,
+                            "text": "一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假:\n年資\t特休假日數\n滿6個月~未滿1年\t3天\n滿1年~未滿2年\t7天\n滿2年~未滿3年\t10天\n滿3年~未滿5年\t14天\n滿5年~未滿10年\t15天\n滿10年以上\t每年加一天至30天止\n二、因年度終結而應休未休之日數，經勞資雙方協商，同仁可選擇全數遞延一年或結算薪資；遞延者，至多以遞延一年為限；若員工未於期限內回覆者，將一律結算薪資予同仁。\n三、如特休年度屆滿或終止契約而應休未休之日數，將依原始年度之薪資結算給同仁。\n四、同仁於年度開始時應做休假規劃，以期達到身心舒展的目的。休假之規劃應與主管取得溝通，以免造成工作安排之困擾。\n五、特休假期間薪資照給。"
+                        }
+                    ],
+                    "final_answer": "好的，您想請特休假三天。公司規定，特休假天數依照年資有所不同，請您確認一下您的年資：\n\n*   滿6個月~未滿1年：3天\n*   滿1年~未滿2年：7天\n*   滿2年~未滿3年：10天\n*   滿3年~未滿5年：14天\n*   滿5年~未滿10年：15天\n*   滿10年以上：每年加一天至30天止\n\n請您確認您的年資，並事先與主管溝通休假規劃喔！"
+                },
+                "content_type": "RAGFormat",
+                "event": "RunResponse",
+                "metrics": {
+                    "input_tokens": [
+                        5122,
+                        6289
+                    ],
+                    "output_tokens": [
+                        49,
+                        773
+                    ],
+                    "total_tokens": [
+                        5171,
+                        7062
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        5122,
+                        6289
+                    ],
+                    "completion_tokens": [
+                        49,
+                        773
+                    ],
+                    "time": [
+                        3.7523456670000996,
+                        22.28483629099992
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "run_id": "147f0d16-07e8-403d-81f9-2a7e48c142bc",
+                "agent_id": "f61f33fd-eb3a-4f0d-9f76-b9191364e68b",
+                "session_id": "session_1",
+                "tools": [
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.58001995,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.30635563,\n  \"text\": \"一、因公司業務需要，而指派特定人員參加考試檢定者，其費用由公司全額支付。\\n二、因公司人才培育需求而鼓勵同仁自發性參與特定考試檢定者，依個別鼓勵辦法補助之。\\n三、檢定考試完成之後，憑三聯式發票及考試成績單或檢定合格證書提出申請。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假:\\n年資\\t特休假日數\\n滿6個月~未滿1年\\t3天\\n滿1年~未滿2年\\t7天\\n滿2年~未滿3年\\t10天\\n滿3年~未滿5年\\t14天\\n滿5年~未滿10年\\t15天\\n滿10年以上\\t每年加一天至30天止\\n二、因年度終結而應休未休之日數，經勞資雙方協商，同仁可選擇全數遞延一年或結算薪資；遞延者，至多以遞延一年為限；若員工未於期限內回覆者，將一律結算薪資予同仁。\\n三、如特休年度屆滿或終止契約而應休未休之日數，將依原始年度之薪資結算給同仁。\\n四、同仁於年度開始時應做休假規劃，以期達到身心舒展的目的。休假之規劃應與主管取得溝通，以免造成工作安排之困擾。\\n五、特休假期間薪資照給。\"\n}\n{\n  \"score\": 0.28039062,\n  \"text\": \"同仁年資之採計方式規定如下:\\n一、實際年資：同仁享用公司所提供之權利、義務(本手冊所載明者)與年資有關時，除非特別指明（如休假年資），其他之計算方式均按實際工作年資計算，即自到職日起至次年的到職日之前一日為一年，享有該累積年資的相關權利。\\n二、休假年資：休假的實施以休假年資起算日為主，採週年制計算特休。\"\n}",
+                        "tool_call_id": "z4EsOvZ1NGQVqntcZsC8UjBhF2gWgYOm",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "input_tokens": 0,
+                            "output_tokens": 0,
+                            "total_tokens": 0,
+                            "audio_tokens": 0,
+                            "input_audio_tokens": 0,
+                            "output_audio_tokens": 0,
+                            "cached_tokens": 0,
+                            "reasoning_tokens": 0,
+                            "prompt_tokens": 0,
+                            "completion_tokens": 0,
+                            "prompt_tokens_details": null,
+                            "completion_tokens_details": null,
+                            "additional_metrics": null,
+                            "time": 0.09424966699998549,
+                            "time_to_first_token": null,
+                            "timer": null
+                        },
+                        "created_at": 1750401966
+                    }
+                ],
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=特休假規定)"
+                ],
+                "created_at": 1750401651,
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Retrieval-Based Answering: If the question requires specialized or external knowledge, retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n3. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1750401962
+                    },
+                    {
+                        "content": "我想要請假出去玩，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401701
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "請假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 992,
+                            "output_tokens": 48,
+                            "total_tokens": 1040,
+                            "prompt_tokens": 992,
+                            "completion_tokens": 48,
+                            "time": 1.4836007500000505
+                        },
+                        "created_at": 1750401701
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "Fgi1NqRCj0tkgjVd65XuBZKpj01c2Rhu",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.13231099999995877
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.3,\n      \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n    },\n    {\n      \"score\": 0.2645357,\n      \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n    }\n  ],\n  \"final_answer\": \"好的，根據公司規定，請假有幾種不同的種類，像是特休假、事假、婚假等等。請假需要事先填寫請假單，並經主管核定。請假天數不同，核准權限和事前申請天數也不同，詳細資訊如下：\\n\\n*   0-5天：提前三天向部門主管申請\\n*   5-10天：提前一週向處級主管申請\\n*   10天以上：提前兩週向業務/事業群總經理申請\\n\\n如果遇到臨時狀況，當天早上10點前先電話向主管報備，事後再補辦手續。未依規定請假可能會被視同曠職喔。\\n\\n您想請哪一種假呢？需要我幫您查詢更詳細的規定嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2182,
+                            "output_tokens": 946,
+                            "total_tokens": 3128,
+                            "prompt_tokens": 2182,
+                            "completion_tokens": 946,
+                            "time": 24.696461209000063
+                        },
+                        "created_at": 1750401703
+                    },
+                    {
+                        "content": "今天天氣真好～臺北現在33度",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401900
+                    },
+                    {
+                        "content": "{\n  \"reference\": [],\n  \"final_answer\": \"是啊，今天臺北天氣確實很好！33度是個熱情的好天氣呢。請問您有什麼需要我幫忙的嗎？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3137,
+                            "output_tokens": 61,
+                            "total_tokens": 3198,
+                            "prompt_tokens": 3137,
+                            "completion_tokens": 61,
+                            "time": 23.546566625000196
+                        },
+                        "created_at": 1750401900
+                    },
+                    {
+                        "content": "我想要請假出去玩，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401927
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "USDgoswiS5WjwyBhkQXSGFhziaRpL5mX",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "請假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3208,
+                            "output_tokens": 48,
+                            "total_tokens": 3256,
+                            "prompt_tokens": 3208,
+                            "completion_tokens": 48,
+                            "time": 3.41573362500003
+                        },
+                        "created_at": 1750401927
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "USDgoswiS5WjwyBhkQXSGFhziaRpL5mX",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.1383950829999776
+                        },
+                        "created_at": 1750401930
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.2645357,\n      \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n    }\n  ],\n  \"final_answer\": \"您好，公司請假規定如下：\\n\\n*   **休假種類：** 公司有特休假、事假、婚假等等共十四種休假種類。\\n*   **請假流程：** 需要事先填寫請假單或口頭敘明理由，經主管核定。\\n*   **事前申請天數：**\\n    *   5天以內：提前三天向部門主管申請\\n    *   5-10天：提前一週向處級主管申請\\n    *   10天以上：提前兩週向業務/事業群總經理申請\\n*   **臨時狀況：** 若是臨時狀況，當天早上10點前電話向主管報備，事後再補辦手續。\\n\\n請問您想請哪一種假呢？\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4388,
+                            "output_tokens": 798,
+                            "total_tokens": 5186,
+                            "prompt_tokens": 4388,
+                            "completion_tokens": 798,
+                            "time": 27.33029020899994
+                        },
+                        "created_at": 1750401930
+                    },
+                    {
+                        "content": "我想要請特休假三天",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1750401962
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "z4EsOvZ1NGQVqntcZsC8UjBhF2gWgYOm",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假規定\"}",
+                                    "name": "retrieve_fps_rules_db",
+                                    "parsed_arguments": {
+                                        "query": "特休假規定"
+                                    }
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 5122,
+                            "output_tokens": 49,
+                            "total_tokens": 5171,
+                            "prompt_tokens": 5122,
+                            "completion_tokens": 49,
+                            "time": 3.7523456670000996
+                        },
+                        "created_at": 1750401962
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.58001995,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.30635563,\n  \"text\": \"一、因公司業務需要，而指派特定人員參加考試檢定者，其費用由公司全額支付。\\n二、因公司人才培育需求而鼓勵同仁自發性參與特定考試檢定者，依個別鼓勵辦法補助之。\\n三、檢定考試完成之後，憑三聯式發票及考試成績單或檢定合格證書提出申請。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假:\\n年資\\t特休假日數\\n滿6個月~未滿1年\\t3天\\n滿1年~未滿2年\\t7天\\n滿2年~未滿3年\\t10天\\n滿3年~未滿5年\\t14天\\n滿5年~未滿10年\\t15天\\n滿10年以上\\t每年加一天至30天止\\n二、因年度終結而應休未休之日數，經勞資雙方協商，同仁可選擇全數遞延一年或結算薪資；遞延者，至多以遞延一年為限；若員工未於期限內回覆者，將一律結算薪資予同仁。\\n三、如特休年度屆滿或終止契約而應休未休之日數，將依原始年度之薪資結算給同仁。\\n四、同仁於年度開始時應做休假規劃，以期達到身心舒展的目的。休假之規劃應與主管取得溝通，以免造成工作安排之困擾。\\n五、特休假期間薪資照給。\"\n}\n{\n  \"score\": 0.28039062,\n  \"text\": \"同仁年資之採計方式規定如下:\\n一、實際年資：同仁享用公司所提供之權利、義務(本手冊所載明者)與年資有關時，除非特別指明（如休假年資），其他之計算方式均按實際工作年資計算，即自到職日起至次年的到職日之前一日為一年，享有該累積年資的相關權利。\\n二、休假年資：休假的實施以休假年資起算日為主，採週年制計算特休。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "z4EsOvZ1NGQVqntcZsC8UjBhF2gWgYOm",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.09424966699998549
+                        },
+                        "created_at": 1750401966
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    {\n      \"score\": 0.7,\n      \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n    },\n    {\n      \"score\": 0.30635563,\n      \"text\": \"一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假:\\n年資\\t特休假日數\\n滿6個月~未滿1年\\t3天\\n滿1年~未滿2年\\t7天\\n滿2年~未滿3年\\t10天\\n滿3年~未滿5年\\t14天\\n滿5年~未滿10年\\t15天\\n滿10年以上\\t每年加一天至30天止\\n二、因年度終結而應休未休之日數，經勞資雙方協商，同仁可選擇全數遞延一年或結算薪資；遞延者，至多以遞延一年為限；若員工未於期限內回覆者，將一律結算薪資予同仁。\\n三、如特休年度屆滿或終止契約而應休未休之日數，將依原始年度之薪資結算給同仁。\\n四、同仁於年度開始時應做休假規劃，以期達到身心舒展的目的。休假之規劃應與主管取得溝通，以免造成工作安排之困擾。\\n五、特休假期間薪資照給。\"\n    }\n  ],\n  \"final_answer\": \"好的，您想請特休假三天。公司規定，特休假天數依照年資有所不同，請您確認一下您的年資：\\n\\n*   滿6個月~未滿1年：3天\\n*   滿1年~未滿2年：7天\\n*   滿2年~未滿3年：10天\\n*   滿3年~未滿5年：14天\\n*   滿5年~未滿10年：15天\\n*   滿10年以上：每年加一天至30天止\\n\\n請您確認您的年資，並事先與主管溝通休假規劃喔！\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6289,
+                            "output_tokens": 773,
+                            "total_tokens": 7062,
+                            "prompt_tokens": 6289,
+                            "completion_tokens": 773,
+                            "time": 22.28483629099992
+                        },
+                        "created_at": 1750401966
+                    }
+                ]
+            }
+        ]
+    },
+    "session_data": {
+        "session_state": {
+            "current_user_id": "user_1",
+            "current_session_id": "session_1"
+        },
+        "session_metrics": {
+            "input_tokens": 52394,
+            "output_tokens": 6933,
+            "total_tokens": 59327,
+            "audio_tokens": 0,
+            "input_audio_tokens": 0,
+            "output_audio_tokens": 0,
+            "cached_tokens": 0,
+            "reasoning_tokens": 0,
+            "prompt_tokens": 52394,
+            "completion_tokens": 6933,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null,
+            "additional_metrics": null,
+            "time": 273.3207035050009,
+            "time_to_first_token": null,
+            "timer": null
+        }
+    },
+    "extra_data": null,
+    "created_at": 1750401988,
+    "updated_at": 1750401988,
+    "agent_id": "f61f33fd-eb3a-4f0d-9f76-b9191364e68b",
+    "agent_data": {
+        "agent_id": "f61f33fd-eb3a-4f0d-9f76-b9191364e68b",
+        "model": {
+            "provider": "OpenAI",
+            "name": "OpenAILike",
+            "id": "openai/gemma3:27b-it-qat"
+        }
+    }
+}
