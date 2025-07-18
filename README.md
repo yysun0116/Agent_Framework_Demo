@@ -57,3 +57,9 @@
     - With structured output
     - Tool-use (Retrievers, via MCP)
     - Multi-turn conversation
+2. Multi-Agent
+    <img src="images/multi_agent_testing_scenario.png" width="100%"/>
+    - Agentic/Multi-Agent coordination
+    - Tool-use (Retrievers, via MCP)
+    - Multi-turn conversation
+    - Memory Management
