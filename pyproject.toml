@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "agno>=1.5.3",
+    "agno>=1.7.4",
     "einops>=0.8.1",
     "google-adk>=1.0.0",
     "hf-xet>=1.1.2",
@@ -13,7 +13,7 @@ dependencies = [
     "numpy==1.26.4",
     "openai-agents[litellm]>=0.0.16",
     "opensearch-py>=2.8.0",
-    "pydantic-ai[logfire]>=0.2.6",
+    "pydantic-ai[logfire]>=0.4.3",
     "sentence-transformers>=4.1.0",
     "torch>=2.7.0",
 ]
