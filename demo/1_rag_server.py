@@ -109,4 +109,4 @@ async def retrieve_NSTC_research_project_db(query: str) -> List[dict]:
 
 if __name__ == "__main__":
     # Run the server
-    mcp.run()
+    mcp.run(transport="stdio")

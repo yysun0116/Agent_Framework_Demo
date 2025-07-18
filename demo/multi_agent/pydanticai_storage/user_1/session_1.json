@@ -1,0 +1,298 @@
+[
+    {
+        "parts": [
+            {
+                "content": "我想要請假，有沒有什麼限制？",
+                "timestamp": "2025-07-18T09:01:20.884485Z",
+                "part_kind": "user-prompt"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "rag",
+                "args": "{\"query\":\"請假規定\"}",
+                "tool_call_id": "9nwch4YZAs59EH6oYMpTLnVUti6CCo9L",
+                "part_kind": "tool-call"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 538,
+            "response_tokens": 42,
+            "total_tokens": 580,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:01:22Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-R6wmdWU9x92d5aHzF31j8jQ3lyB4fvfs"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "rag",
+                "content": {
+                    "reference": [
+                        "[1] [5] 一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\n\n請假天數，核准主管權限及事前天數辦法如下：\n請假天數\t事前天數\t核准主管權限\n0<天數≦5\t三天前\t部門主管\n5<天數≦10\t一週前\t處級主管\n天數>10\t兩週前\t業務/事業群總經理\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。"
+                    ],
+                    "final_answer": "根據公司規定，請假種類共有十四種，包含特休假、生日假等等。請假方式需要事先填寫請假單或口頭敘明理由經核定。請假天數不同，核准主管權限及事前天數也不同：\n\n*   0-5天：三天前，部門主管核准\n*   5-10天：一週前，處級主管核准\n*   超過10天：兩週前，業務/事業群總經理核准\n\n如果遇到突發狀況或生病需要當日請假，需在上午10點前電話報備，並事後補辦手續。未依規定請假且未補辦手續將視同曠職。"
+                },
+                "tool_call_id": "9nwch4YZAs59EH6oYMpTLnVUti6CCo9L",
+                "metadata": null,
+                "timestamp": "2025-07-18T09:02:54.475223Z",
+                "part_kind": "tool-return"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "content": "好的，公司請假規定如下：\n\n一、休假種類共有十四種，包含特休假、生日假等等。\n二、請假方式需要事先填寫請假單或口頭敘明理由經核定。\n三、請假天數不同，核准主管權限及事前天數也不同：\n\n* 0-5天：三天前，部門主管核准\n* 5-10天：一週前，處級主管核准\n* 超過10天：兩週前，業務/事業群總經理核准\n\n四、如果遇到突發狀況或生病需要當日請假，需在上午10點前電話報備，並事後補辦手續。未依規定請假且未補辦手續將視同曠職。\n\n請問您還有其他想了解的嗎？",
+                "part_kind": "text"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 1153,
+            "response_tokens": 212,
+            "total_tokens": 1365,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:03:01Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-GiKxlZ0XiagYAPYhxMwBDrblzVaYTjPL"
+    },
+    {
+        "parts": [
+            {
+                "content": "我可以請幾天假？",
+                "timestamp": "2025-07-18T09:03:12.937113Z",
+                "part_kind": "user-prompt"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "rag",
+                "args": "{\"query\":\"請假天數限制\"}",
+                "tool_call_id": "1YxdAVVVk4fH2gkmFaSH8lKLGVNILWTQ",
+                "part_kind": "tool-call"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 1357,
+            "response_tokens": 44,
+            "total_tokens": 1401,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:03:15Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-2t1djvG6GUW2sZc4lvJtoIEB7kqKUgz0"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "rag",
+                "content": {
+                    "passages": [
+                        {
+                            "relevant": true,
+                            "text": "一、同仁到職當年度即享有一天生日假，生日當月可擇一日請(放)生日假；請假之最小單位為一天。\n二、生日假於生日當月有效，棄權者不得再補休。\n三、生日假薪資照給。"
+                        },
+                        {
+                            "relevant": true,
+                            "text": "一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。"
+                        },
+                        {
+                            "relevant": true,
+                            "text": "請假天數，核准主管權限及事前天數辦法如下：\n請假天數\t事前天數\t核准主管權限\n0<天數≦5\t三天前\t部門主管\n5<天數≦10\t一週前\t處級主管\n天數>10\t兩週前\t業務/事業群總經理"
+                        }
+                    ],
+                    "explanation": "根據提供的資料，員工到職當年可請一天生日假。此外，資料也列出了十四種休假種類，並說明了請假天數與核准權限。但要請幾天假，還需要根據具體的休假種類（例如特休假）以及員工的職位和請假原因而定。",
+                    "sufficient": false
+                },
+                "tool_call_id": "1YxdAVVVk4fH2gkmFaSH8lKLGVNILWTQ",
+                "metadata": null,
+                "timestamp": "2025-07-18T09:04:20.071696Z",
+                "part_kind": "tool-return"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "content": "您可以請的假天數取決於您要請哪一種假。根據公司規定：\n\n*   到職當年可以請一天生日假。\n*   其他休假種類，例如特休假、事假等等，請假天數沒有明確限制，但需要根據您的職位和請假原因，並事先向主管申請。具體天數需要依照公司請假規定（0-5天、5-10天、超過10天）來決定。\n\n請問您想請哪一種假呢？這樣我才能更準確地告訴您。",
+                "part_kind": "text"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 1827,
+            "response_tokens": 139,
+            "total_tokens": 1966,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:04:25Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-neDB0r43IU8R4BZbR94LAOxdEzIpsjbI"
+    },
+    {
+        "parts": [
+            {
+                "content": "我想請特休假",
+                "timestamp": "2025-07-18T09:08:39.021982Z",
+                "part_kind": "user-prompt"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "rag",
+                "args": "{\"query\":\"特休假規定\"}",
+                "tool_call_id": "h1yykQR0hfYMRrM2hGlZnPBIOV9qFbjz",
+                "part_kind": "tool-call"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 1966,
+            "response_tokens": 43,
+            "total_tokens": 2009,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:08:41Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-iDBbMUNAGeSwnHTf65DNcKa7PufKQ3f5"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "rag",
+                "content": {
+                    "reference": [
+                        "[1] 一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假: 年資\t特休假日數 滿6個月~未滿1年\t3天 滿1年~未滿2年\t7天 滿2年~未滿3年\t10天 滿3年~未滿5年\t14天 滿5年~未滿10年\t15天 滿10年以上\t每年加一天至30天止 二、因年度終結而應休未休之日數，經勞資雙方協商，同仁可選擇全數遞延一年或結算薪資；遞延者，至多以遞延一年為限；若員工未於期限內回覆者，將一律結算薪資予同仁。",
+                        "[2] 一、同仁年資之採計方式規定如下: 一、實際年資：同仁享用公司所提供之權利、義務(本手冊所載明者)與年資有關時，除非特別指明（如休假年資），其他之計算方式均按實際工作年資計算，即自到職日起至次年的到職日之前一日為一年，享有該累積年資的相關權利。二、休假年資：休假的實施以休假年資起算日為主，採週年制計算特休。"
+                    ],
+                    "final_answer": "您好，根據公司規定，特休假天數依您的年資而定：\n\n*   滿6個月~未滿1年：3天\n*   滿1年~未滿2年：7天\n*   滿2年~未滿3年：10天\n*   滿3年~未滿5年：14天\n*   滿5年~未滿10年：15天\n*   滿10年以上：每年加一天至30天止\n\n請您確認您的年資，以便計算您的特休天數。另外，請您在年度開始時做休假規劃，並與主管溝通，以確保工作順利進行。未休的特休假可以選擇遞延一年或結算薪資。"
+                },
+                "tool_call_id": "h1yykQR0hfYMRrM2hGlZnPBIOV9qFbjz",
+                "metadata": null,
+                "timestamp": "2025-07-18T09:10:18.552990Z",
+                "part_kind": "tool-return"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "content": "您好，根據公司規定，特休假天數依您的年資而定：\n\n*   滿6個月~未滿1年：3天\n*   滿1年~未滿2年：7天\n*   滿2年~未滿3年：10天\n*   滿3年~未滿5年：14天\n*   滿5年~未滿10年：15天\n*   滿10年以上：每年加一天至30天止\n\n請您確認您的年資，以便計算您的特休天數。另外，未休的特休假可以選擇遞延一年或結算薪資。",
+                "part_kind": "text"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 2619,
+            "response_tokens": 165,
+            "total_tokens": 2784,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:10:27Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-tK7JHm1k9UrmJMH3vV9DzbPyskHnVksU"
+    },
+    {
+        "parts": [
+            {
+                "content": "我目前工作滿一年了",
+                "timestamp": "2025-07-18T09:10:30.266720Z",
+                "part_kind": "user-prompt"
+            }
+        ],
+        "instructions": "You are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.",
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "final_result",
+                "args": "{\"final_answer\":\"您好，由於您目前工作滿一年了，根據公司規定，您今年可以請7天的特休假。\",\"reference\":[\"[1] 一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假: 年資\\\\t特休假日數 滿6個月~未滿1年\\\\t3天 滿1年~未滿2年\\\\t7天 滿2年~未滿3年\\\\t10天 滿3年~未滿5年\\\\t14天 滿5年~未滿10年\\\\t15天 滿10年以上\\\\t每年加一天至30天止\"]}",
+                "tool_call_id": "TkEg0fnyzDPDCzZ0eKXq5Jq6844bFT7R",
+                "part_kind": "tool-call"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 2779,
+            "response_tokens": 198,
+            "total_tokens": 2977,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:10:38Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-493NhZqddAot7YTvfcS9De0dhAtcWBKy"
+    },
+    {
+        "parts": [
+            {
+                "tool_name": "final_result",
+                "content": "Final result processed.",
+                "tool_call_id": "TkEg0fnyzDPDCzZ0eKXq5Jq6844bFT7R",
+                "metadata": null,
+                "timestamp": "2025-07-18T09:10:38.998835Z",
+                "part_kind": "tool-return"
+            }
+        ],
+        "instructions": null,
+        "kind": "request"
+    },
+    {
+        "parts": [
+            {
+                "content": "{\"final_answer\":\"您好，由於您目前工作滿一年了，根據公司規定，您今年可以請7天的特休假。\",\"reference\":[\"[1] 一、同仁於本公司繼續工作滿一定期間者，每年依下列規定給與特別休假: 年資\\\\t特休假日數 滿6個月~未滿1年\\\\t3天 滿1年~未滿2年\\\\t7天 滿2年~未滿3年\\\\t10天 滿3年~未滿5年\\\\t14天 滿5年~未滿10年\\\\t15天 滿10年以上\\\\t每年加一天至30天止\"]}",
+                "part_kind": "text"
+            }
+        ],
+        "usage": {
+            "requests": 1,
+            "request_tokens": 2779,
+            "response_tokens": 198,
+            "total_tokens": 2977,
+            "details": {}
+        },
+        "model_name": "gemma3:27b-it-qat",
+        "timestamp": "2025-07-18T09:10:38Z",
+        "kind": "response",
+        "vendor_details": null,
+        "vendor_id": "chatcmpl-493NhZqddAot7YTvfcS9De0dhAtcWBKy"
+    }
+]

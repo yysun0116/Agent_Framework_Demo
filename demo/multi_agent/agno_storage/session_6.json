@@ -1,0 +1,2685 @@
+{
+    "session_id": "session_6",
+    "user_id": "user_1",
+    "team_session_id": null,
+    "workflow_session_id": null,
+    "memory": {
+        "summaries": {},
+        "memories": {},
+        "runs": [
+            {
+                "content": "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                "content_type": "str",
+                "metrics": {
+                    "input_tokens": [
+                        848,
+                        2032
+                    ],
+                    "output_tokens": [
+                        48,
+                        273
+                    ],
+                    "total_tokens": [
+                        896,
+                        2305
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        848,
+                        2032
+                    ],
+                    "completion_tokens": [
+                        48,
+                        273
+                    ],
+                    "time": [
+                        1.9259162909875158,
+                        7.4467635420151055
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "233065ad-edf7-437e-bd29-961862bcb9be",
+                "agent_id": "d7ddd4be-afbb-439a-b75b-1f83f299191e",
+                "agent_name": "seeker_agent",
+                "session_id": "session_6",
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=請假規定)"
+                ],
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n2. Return all the retrieval results with Reference format.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827109
+                    },
+                    {
+                        "content": "我想要請假，有沒有什麼限制？",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827109
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 848,
+                            "output_tokens": 48,
+                            "total_tokens": 896,
+                            "prompt_tokens": 848,
+                            "completion_tokens": 48,
+                            "time": 1.9259162909875158
+                        },
+                        "created_at": 1752827109
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.34960216699982993
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2032,
+                            "output_tokens": 273,
+                            "total_tokens": 2305,
+                            "prompt_tokens": 2032,
+                            "completion_tokens": 273,
+                            "time": 7.4467635420151055
+                        },
+                        "created_at": 1752827111
+                    }
+                ],
+                "tools": [
+                    {
+                        "tool_call_id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "result": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "metrics": {
+                            "time": 0.34960216699982993
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752826980,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": [],
+                        "answered": null,
+                        "external_execution_required": null
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "passages": [
+                        {
+                            "relevant": true,
+                            "text": "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！"
+                        }
+                    ],
+                    "explanation": "The retrieved passage directly addresses the user's question about the limitations of taking leave. It provides a clear summary of the company's leave policies, including working hours, types of leave, the application process based on the number of days, procedures for emergency leave, and consequences for not following the regulations. Therefore, the passage is highly relevant and sufficient to answer the user's query.",
+                    "sufficient": true
+                },
+                "content_type": "Criticism",
+                "metrics": {
+                    "input_tokens": [
+                        1847
+                    ],
+                    "output_tokens": [
+                        391
+                    ],
+                    "total_tokens": [
+                        2238
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        1847
+                    ],
+                    "completion_tokens": [
+                        391
+                    ],
+                    "time": [
+                        10.894446084013907
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "09232f37-b896-4665-803c-a085e1a3eadc",
+                "agent_id": "0c941ec0-c950-4e9e-8d3a-3871c68bea70",
+                "agent_name": "critic_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Critically evaluate whether the retrieved passages are relevant to the user's query.\n2. Critically evaluate whether the retrieved passages are sufficient to answer the user's query.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "我想要請假，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827109
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 848,
+                            "output_tokens": 48,
+                            "total_tokens": 896,
+                            "prompt_tokens": 848,
+                            "completion_tokens": 48,
+                            "time": 1.9259162909875158
+                        },
+                        "created_at": 1752827109
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.34960216699982993
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2032,
+                            "output_tokens": 273,
+                            "total_tokens": 2305,
+                            "prompt_tokens": 2032,
+                            "completion_tokens": 273,
+                            "time": 7.4467635420151055
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Retrieved Passages:\n您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n    }\n  ],\n  \"explanation\": \"The retrieved passage directly addresses the user's question about the limitations of taking leave. It provides a clear summary of the company's leave policies, including working hours, types of leave, the application process based on the number of days, procedures for emergency leave, and consequences for not following the regulations. Therefore, the passage is highly relevant and sufficient to answer the user's query.\"\n,\n  \"sufficient\": true\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 1847,
+                            "output_tokens": 391,
+                            "total_tokens": 2238,
+                            "prompt_tokens": 1847,
+                            "completion_tokens": 391,
+                            "time": 10.894446084013907
+                        },
+                        "created_at": 1752827120
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！"
+                    ],
+                    "final_answer": "您好，想請假的話，公司有些規定需要注意喔！\n\n*   **工作時間：** 一週工作時間不能超過四十小時，一天工作時間是八小時。\n*   **請假種類：** 像是特休假、生日假、事假、病假等等都有。\n*   **請假流程：** 需要事先填寫請假單，依照請假的天數，經由不同主管核准：\n    *   5天以內：要提前三天跟部門主管請假。\n    *   5到10天：要提前一週跟處級主管請假。\n    *   10天以上：要提前兩週跟業務/事業群總經理請假。\n*   **臨時狀況：** 如果是突發狀況，當天早上10點前可以先電話報備，之後再補辦手續。\n*   **沒依規定請假：** 如果沒按照規定請假，而且沒有補辦手續，可能會被視為曠職喔。\n\n更詳細的規定，可以參考公司內部規定，或是直接問人資部門比較清楚。"
+                },
+                "content_type": "RAGFormat",
+                "metrics": {
+                    "input_tokens": [
+                        2532
+                    ],
+                    "output_tokens": [
+                        542
+                    ],
+                    "total_tokens": [
+                        3074
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        2532
+                    ],
+                    "completion_tokens": [
+                        542
+                    ],
+                    "time": [
+                        20.619362666999223
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "dee765d4-1ec0-42a1-8a64-0b5ac58508d3",
+                "agent_id": "112b835f-3b4d-4d44-8ec8-749c9745fda8",
+                "agent_name": "generator_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Generate a final answer based on the retrieved passages.\n2. If the retrieved passages are insufficient, ask follow-up questions to gather more information.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "我想要請假，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827109
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 848,
+                            "output_tokens": 48,
+                            "total_tokens": 896,
+                            "prompt_tokens": 848,
+                            "completion_tokens": 48,
+                            "time": 1.9259162909875158
+                        },
+                        "created_at": 1752827109
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.34960216699982993
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2032,
+                            "output_tokens": 273,
+                            "total_tokens": 2305,
+                            "prompt_tokens": 2032,
+                            "completion_tokens": 273,
+                            "time": 7.4467635420151055
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Retrieved Passages:\n您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n    }\n  ],\n  \"explanation\": \"The retrieved passage directly addresses the user's question about the limitations of taking leave. It provides a clear summary of the company's leave policies, including working hours, types of leave, the application process based on the number of days, procedures for emergency leave, and consequences for not following the regulations. Therefore, the passage is highly relevant and sufficient to answer the user's query.\"\n,\n  \"sufficient\": true\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 1847,
+                            "output_tokens": 391,
+                            "total_tokens": 2238,
+                            "prompt_tokens": 1847,
+                            "completion_tokens": 391,
+                            "time": 10.894446084013907
+                        },
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Relevant Passages:\n[1] 您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n  ],\n  \"final_answer\": \"您好，想請假的話，公司有些規定需要注意喔！\\n\\n*   **工作時間：** 一週工作時間不能超過四十小時，一天工作時間是八小時。\\n*   **請假種類：** 像是特休假、生日假、事假、病假等等都有。\\n*   **請假流程：** 需要事先填寫請假單，依照請假的天數，經由不同主管核准：\\n    *   5天以內：要提前三天跟部門主管請假。\\n    *   5到10天：要提前一週跟處級主管請假。\\n    *   10天以上：要提前兩週跟業務/事業群總經理請假。\\n*   **臨時狀況：** 如果是突發狀況，當天早上10點前可以先電話報備，之後再補辦手續。\\n*   **沒依規定請假：** 如果沒按照規定請假，而且沒有補辦手續，可能會被視為曠職喔。\\n\\n更詳細的規定，可以參考公司內部規定，或是直接問人資部門比較清楚。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2532,
+                            "output_tokens": 542,
+                            "total_tokens": 3074,
+                            "prompt_tokens": 2532,
+                            "completion_tokens": 542,
+                            "time": 20.619362666999223
+                        },
+                        "created_at": 1752827131
+                    }
+                ]
+            },
+            {
+                "content": "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                "content_type": "str",
+                "metrics": {
+                    "input_tokens": [
+                        3835,
+                        4876
+                    ],
+                    "output_tokens": [
+                        50,
+                        174
+                    ],
+                    "total_tokens": [
+                        3885,
+                        5050
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        3835,
+                        4876
+                    ],
+                    "completion_tokens": [
+                        50,
+                        174
+                    ],
+                    "time": [
+                        3.6389388749958016,
+                        5.045871957991039
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "0ab31079-01df-44cd-812b-c68c009a3bb5",
+                "agent_id": "d7ddd4be-afbb-439a-b75b-1f83f299191e",
+                "agent_name": "seeker_agent",
+                "session_id": "session_6",
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=請假天數限制)"
+                ],
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n2. Return all the retrieval results with Reference format.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827171
+                    },
+                    {
+                        "content": "我想要請假，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827109
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 848,
+                            "output_tokens": 48,
+                            "total_tokens": 896,
+                            "prompt_tokens": 848,
+                            "completion_tokens": 48,
+                            "time": 1.9259162909875158
+                        },
+                        "created_at": 1752827109
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"此為依據勞動基準法所訂定的最基準工作時間。\\n一、每週工作時數不得超過四十小時。\\n二、每日工作時數為八小時。\\n三、每日工作時間為\\n08:30 開始上班\\n12:00 午休及午餐時間\\n13:00 下午工作時間開始\\n15:00 下午休息時間\\n15:15 繼續工作\\n17:30 下班\\n子女未滿一歲須員工親自哺乳者，除規定之休息時間外，本公司將每日另給哺乳時間二次，每次以三十分鐘為度，哺乳時間，視為工作時間。\\n員工為撫育未滿三歲子女，得請求下列所定事項之一：\\n1.\\t每天減少工作時間一小時；減少之工作時間，不得請求報酬。\\n2.\\t調整工作時間。\\n員工為前二項哺乳時間、減少或調整工時之請求時，本公司不得拒絕或視為缺勤而影響其全勤獎金、考績或為其他不利之處分。\"\n}\n{\n  \"score\": 0.42953295,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、同仁因執行公務中受傷之病假，稱為公傷假。\\n二、公傷假之醫療費用，以勞工保險及公司加保之團保負擔之，其餘相關規定及補償辦法比照第八章災害傷病補償及撫卹之規定辦理。\\n三、職業災害未認定前，勞工得先請普通傷病假；普通傷病假期滿，得申請留職停薪，如認定結果為職業災害，再以公傷病假處理。\"\n}\n{\n  \"score\": 0.28747067,\n  \"text\": \"一、紀念日，勞動節日及中央主管機關規定應放假之日，是放假日。 \\n二、相關日期依當年政府規定於每年開始時，公告同仁周知。\\n三、主管或同仁個人因工作上的需要必須應用此放假日工作者，必須依照延長工作時間申請程序申請延長工作。\\n四、申請延長工作時間作業必須在規定期限內完成。\\n五、本延長工作時間之薪資按日工資再發一日。\"\n}\n{\n  \"score\": 0.2645357,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "nV7pNRSqPMMOoQic5K7fv8CMmBnZkhpD",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.34960216699982993
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2032,
+                            "output_tokens": 273,
+                            "total_tokens": 2305,
+                            "prompt_tokens": 2032,
+                            "completion_tokens": 273,
+                            "time": 7.4467635420151055
+                        },
+                        "created_at": 1752827111
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Retrieved Passages:\n您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n    }\n  ],\n  \"explanation\": \"The retrieved passage directly addresses the user's question about the limitations of taking leave. It provides a clear summary of the company's leave policies, including working hours, types of leave, the application process based on the number of days, procedures for emergency leave, and consequences for not following the regulations. Therefore, the passage is highly relevant and sufficient to answer the user's query.\"\n,\n  \"sufficient\": true\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 1847,
+                            "output_tokens": 391,
+                            "total_tokens": 2238,
+                            "prompt_tokens": 1847,
+                            "completion_tokens": 391,
+                            "time": 10.894446084013907
+                        },
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Relevant Passages:\n[1] 您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n  ],\n  \"final_answer\": \"您好，想請假的話，公司有些規定需要注意喔！\\n\\n*   **工作時間：** 一週工作時間不能超過四十小時，一天工作時間是八小時。\\n*   **請假種類：** 像是特休假、生日假、事假、病假等等都有。\\n*   **請假流程：** 需要事先填寫請假單，依照請假的天數，經由不同主管核准：\\n    *   5天以內：要提前三天跟部門主管請假。\\n    *   5到10天：要提前一週跟處級主管請假。\\n    *   10天以上：要提前兩週跟業務/事業群總經理請假。\\n*   **臨時狀況：** 如果是突發狀況，當天早上10點前可以先電話報備，之後再補辦手續。\\n*   **沒依規定請假：** 如果沒按照規定請假，而且沒有補辦手續，可能會被視為曠職喔。\\n\\n更詳細的規定，可以參考公司內部規定，或是直接問人資部門比較清楚。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2532,
+                            "output_tokens": 542,
+                            "total_tokens": 3074,
+                            "prompt_tokens": 2532,
+                            "completion_tokens": 542,
+                            "time": 20.619362666999223
+                        },
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "我可以請幾天假？",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827171
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假天數限制\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3835,
+                            "output_tokens": 50,
+                            "total_tokens": 3885,
+                            "prompt_tokens": 3835,
+                            "completion_tokens": 50,
+                            "time": 3.6389388749958016
+                        },
+                        "created_at": 1752827171
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"一、同仁到職當年度即享有一天生日假，生日當月可擇一日請(放)生日假；請假之最小單位為一天。\\n二、生日假於生日當月有效，棄權者不得再補休。\\n三、生日假薪資照給。\"\n}\n{\n  \"score\": 0.67383134,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}\n{\n  \"score\": 0.48483455,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.37600818,\n  \"text\": \"一、公司原則上以星期日為例假日，星期六為休息日。\\n二、例假日不得工作，但是若因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\\n三、例假日工資照給。\"\n}\n{\n  \"score\": 0.3007,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假天數限制"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.23489041699212976
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4876,
+                            "output_tokens": 174,
+                            "total_tokens": 5050,
+                            "prompt_tokens": 4876,
+                            "completion_tokens": 174,
+                            "time": 5.045871957991039
+                        },
+                        "created_at": 1752827174
+                    }
+                ],
+                "tools": [
+                    {
+                        "tool_call_id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假天數限制"
+                        },
+                        "tool_call_error": false,
+                        "result": "{\n  \"score\": 0.7,\n  \"text\": \"一、同仁到職當年度即享有一天生日假，生日當月可擇一日請(放)生日假；請假之最小單位為一天。\\n二、生日假於生日當月有效，棄權者不得再補休。\\n三、生日假薪資照給。\"\n}\n{\n  \"score\": 0.67383134,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}\n{\n  \"score\": 0.48483455,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.37600818,\n  \"text\": \"一、公司原則上以星期日為例假日，星期六為休息日。\\n二、例假日不得工作，但是若因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\\n三、例假日工資照給。\"\n}\n{\n  \"score\": 0.3007,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "metrics": {
+                            "time": 0.23489041699212976
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752826980,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": [],
+                        "answered": null,
+                        "external_execution_required": null
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "passages": [
+                        {
+                            "relevant": true,
+                            "text": "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。"
+                        }
+                    ],
+                    "explanation": "The passage directly answers the user's question by outlining the different types of leave available and the associated timeframes (one day for birthday leave, eight weeks for maternity leave, and varying amounts for other types of leave).  It also correctly points out that specific details depend on company policy and encourages the user to consult internal regulations or HR. Thus, it is both relevant and sufficient.",
+                    "sufficient": true
+                },
+                "content_type": "Criticism",
+                "metrics": {
+                    "input_tokens": [
+                        3033
+                    ],
+                    "output_tokens": [
+                        286
+                    ],
+                    "total_tokens": [
+                        3319
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        3033
+                    ],
+                    "completion_tokens": [
+                        286
+                    ],
+                    "time": [
+                        8.787498042016523
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "3921790d-c132-4972-851f-b8a1bede1286",
+                "agent_id": "0c941ec0-c950-4e9e-8d3a-3871c68bea70",
+                "agent_name": "critic_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Critically evaluate whether the retrieved passages are relevant to the user's query.\n2. Critically evaluate whether the retrieved passages are sufficient to answer the user's query.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Retrieved Passages:\n您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n    }\n  ],\n  \"explanation\": \"The retrieved passage directly addresses the user's question about the limitations of taking leave. It provides a clear summary of the company's leave policies, including working hours, types of leave, the application process based on the number of days, procedures for emergency leave, and consequences for not following the regulations. Therefore, the passage is highly relevant and sufficient to answer the user's query.\"\n,\n  \"sufficient\": true\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 1847,
+                            "output_tokens": 391,
+                            "total_tokens": 2238,
+                            "prompt_tokens": 1847,
+                            "completion_tokens": 391,
+                            "time": 10.894446084013907
+                        },
+                        "created_at": 1752827120
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Relevant Passages:\n[1] 您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n  ],\n  \"final_answer\": \"您好，想請假的話，公司有些規定需要注意喔！\\n\\n*   **工作時間：** 一週工作時間不能超過四十小時，一天工作時間是八小時。\\n*   **請假種類：** 像是特休假、生日假、事假、病假等等都有。\\n*   **請假流程：** 需要事先填寫請假單，依照請假的天數，經由不同主管核准：\\n    *   5天以內：要提前三天跟部門主管請假。\\n    *   5到10天：要提前一週跟處級主管請假。\\n    *   10天以上：要提前兩週跟業務/事業群總經理請假。\\n*   **臨時狀況：** 如果是突發狀況，當天早上10點前可以先電話報備，之後再補辦手續。\\n*   **沒依規定請假：** 如果沒按照規定請假，而且沒有補辦手續，可能會被視為曠職喔。\\n\\n更詳細的規定，可以參考公司內部規定，或是直接問人資部門比較清楚。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2532,
+                            "output_tokens": 542,
+                            "total_tokens": 3074,
+                            "prompt_tokens": 2532,
+                            "completion_tokens": 542,
+                            "time": 20.619362666999223
+                        },
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "我可以請幾天假？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827171
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假天數限制\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3835,
+                            "output_tokens": 50,
+                            "total_tokens": 3885,
+                            "prompt_tokens": 3835,
+                            "completion_tokens": 50,
+                            "time": 3.6389388749958016
+                        },
+                        "created_at": 1752827171
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"一、同仁到職當年度即享有一天生日假，生日當月可擇一日請(放)生日假；請假之最小單位為一天。\\n二、生日假於生日當月有效，棄權者不得再補休。\\n三、生日假薪資照給。\"\n}\n{\n  \"score\": 0.67383134,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}\n{\n  \"score\": 0.48483455,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.37600818,\n  \"text\": \"一、公司原則上以星期日為例假日，星期六為休息日。\\n二、例假日不得工作，但是若因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\\n三、例假日工資照給。\"\n}\n{\n  \"score\": 0.3007,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假天數限制"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.23489041699212976
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4876,
+                            "output_tokens": 174,
+                            "total_tokens": 5050,
+                            "prompt_tokens": 4876,
+                            "completion_tokens": 174,
+                            "time": 5.045871957991039
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Retrieved Passages:\n您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n    }\n  ],\n  \"explanation\": \"The passage directly answers the user's question by outlining the different types of leave available and the associated timeframes (one day for birthday leave, eight weeks for maternity leave, and varying amounts for other types of leave).  It also correctly points out that specific details depend on company policy and encourages the user to consult internal regulations or HR. Thus, it is both relevant and sufficient.\",\n  \"sufficient\": true\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3033,
+                            "output_tokens": 286,
+                            "total_tokens": 3319,
+                            "prompt_tokens": 3033,
+                            "completion_tokens": 286,
+                            "time": 8.787498042016523
+                        },
+                        "created_at": 1752827180
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。"
+                    ],
+                    "final_answer": "您好，公司規定如下：\n\n*   **生日假：** 一年可以請一天，要在生日當月使用。\n*   **產假：** 生產前後共八週（包含星期假日），流產假則依照懷孕週數長短有所不同。\n*   **其他假別：** 像是特休假、事假、病假等等，天數會依照公司規定，需要事先填寫請假單，並經主管核准。請假天數會影響需要提前多久申請，以及要請哪位主管核准。\n\n更詳細的規定，建議您參考公司內部規定，或是直接向人資部門詢問喔！"
+                },
+                "content_type": "RAGFormat",
+                "metrics": {
+                    "input_tokens": [
+                        2828
+                    ],
+                    "output_tokens": [
+                        340
+                    ],
+                    "total_tokens": [
+                        3168
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        2828
+                    ],
+                    "completion_tokens": [
+                        340
+                    ],
+                    "time": [
+                        10.415833791979821
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "574618ad-a5dd-4750-9086-4e99be70f2a3",
+                "agent_id": "112b835f-3b4d-4d44-8ec8-749c9745fda8",
+                "agent_name": "generator_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Generate a final answer based on the retrieved passages.\n2. If the retrieved passages are insufficient, ask follow-up questions to gather more information.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想要請假，有沒有什麼限制？\n## Relevant Passages:\n[1] 您好，關於請假限制，根據公司規定（參考以下資訊）：\n\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\n    *   5天以內：需提前3天向部門主管請假。\n    *   5-10天：需提前1週向處級主管請假。\n    *   10天以上：需提前2週向業務/事業群總經理請假。\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\n\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於請假限制，根據公司規定（參考以下資訊）：\\n\\n*   **工作時間：** 每週工作時數不得超過四十小時，每日工作時數為八小時。\\n*   **請假種類：** 公司有特休假、生日假、事假、病假等多種休假種類。\\n*   **請假流程：** 請假需事先填寫請假單，並依請假天數不同，經不同層級主管核定。\\n    *   5天以內：需提前3天向部門主管請假。\\n    *   5-10天：需提前1週向處級主管請假。\\n    *   10天以上：需提前2週向業務/事業群總經理請假。\\n*   **臨時請假：** 突發狀況可於當日10:00前電話報備，事後補辦手續。\\n*   **未依規定請假：** 未依規定請假且未補辦手續，視同曠職。\\n\\n詳細規定請參考公司內部規定，或向人資部門詢問。希望這些資訊對您有幫助！\"\n  ],\n  \"final_answer\": \"您好，想請假的話，公司有些規定需要注意喔！\\n\\n*   **工作時間：** 一週工作時間不能超過四十小時，一天工作時間是八小時。\\n*   **請假種類：** 像是特休假、生日假、事假、病假等等都有。\\n*   **請假流程：** 需要事先填寫請假單，依照請假的天數，經由不同主管核准：\\n    *   5天以內：要提前三天跟部門主管請假。\\n    *   5到10天：要提前一週跟處級主管請假。\\n    *   10天以上：要提前兩週跟業務/事業群總經理請假。\\n*   **臨時狀況：** 如果是突發狀況，當天早上10點前可以先電話報備，之後再補辦手續。\\n*   **沒依規定請假：** 如果沒按照規定請假，而且沒有補辦手續，可能會被視為曠職喔。\\n\\n更詳細的規定，可以參考公司內部規定，或是直接問人資部門比較清楚。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2532,
+                            "output_tokens": 542,
+                            "total_tokens": 3074,
+                            "prompt_tokens": 2532,
+                            "completion_tokens": 542,
+                            "time": 20.619362666999223
+                        },
+                        "created_at": 1752827131
+                    },
+                    {
+                        "content": "我可以請幾天假？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827171
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假天數限制\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3835,
+                            "output_tokens": 50,
+                            "total_tokens": 3885,
+                            "prompt_tokens": 3835,
+                            "completion_tokens": 50,
+                            "time": 3.6389388749958016
+                        },
+                        "created_at": 1752827171
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"一、同仁到職當年度即享有一天生日假，生日當月可擇一日請(放)生日假；請假之最小單位為一天。\\n二、生日假於生日當月有效，棄權者不得再補休。\\n三、生日假薪資照給。\"\n}\n{\n  \"score\": 0.67383134,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}\n{\n  \"score\": 0.48483455,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.37600818,\n  \"text\": \"一、公司原則上以星期日為例假日，星期六為休息日。\\n二、例假日不得工作，但是若因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\\n三、例假日工資照給。\"\n}\n{\n  \"score\": 0.3007,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假天數限制"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.23489041699212976
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4876,
+                            "output_tokens": 174,
+                            "total_tokens": 5050,
+                            "prompt_tokens": 4876,
+                            "completion_tokens": 174,
+                            "time": 5.045871957991039
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Retrieved Passages:\n您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n    }\n  ],\n  \"explanation\": \"The passage directly answers the user's question by outlining the different types of leave available and the associated timeframes (one day for birthday leave, eight weeks for maternity leave, and varying amounts for other types of leave).  It also correctly points out that specific details depend on company policy and encourages the user to consult internal regulations or HR. Thus, it is both relevant and sufficient.\",\n  \"sufficient\": true\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3033,
+                            "output_tokens": 286,
+                            "total_tokens": 3319,
+                            "prompt_tokens": 3033,
+                            "completion_tokens": 286,
+                            "time": 8.787498042016523
+                        },
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Relevant Passages:\n[1] 您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n  ],\n  \"final_answer\": \"您好，公司規定如下：\\n\\n*   **生日假：** 一年可以請一天，要在生日當月使用。\\n*   **產假：** 生產前後共八週（包含星期假日），流產假則依照懷孕週數長短有所不同。\\n*   **其他假別：** 像是特休假、事假、病假等等，天數會依照公司規定，需要事先填寫請假單，並經主管核准。請假天數會影響需要提前多久申請，以及要請哪位主管核准。\\n\\n更詳細的規定，建議您參考公司內部規定，或是直接向人資部門詢問喔！\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2828,
+                            "output_tokens": 340,
+                            "total_tokens": 3168,
+                            "prompt_tokens": 2828,
+                            "completion_tokens": 340,
+                            "time": 10.415833791979821
+                        },
+                        "created_at": 1752827190
+                    }
+                ]
+            },
+            {
+                "content": "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                "content_type": "str",
+                "metrics": {
+                    "input_tokens": [
+                        3089,
+                        4708,
+                        6325
+                    ],
+                    "output_tokens": [
+                        50,
+                        50,
+                        51
+                    ],
+                    "total_tokens": [
+                        3139,
+                        4758,
+                        6376
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        3089,
+                        4708,
+                        6325
+                    ],
+                    "completion_tokens": [
+                        50,
+                        50,
+                        51
+                    ],
+                    "time": [
+                        3.3809816249995492,
+                        2.4178323750093114,
+                        2.303450082981726
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "697dc255-4110-4d93-8990-7c0e06635804",
+                "agent_id": "d7ddd4be-afbb-439a-b75b-1f83f299191e",
+                "agent_name": "seeker_agent",
+                "session_id": "session_6",
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=特休假申請流程)",
+                    "retrieve_fps_rules_db(query=特休假申請流程)"
+                ],
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n2. Return all the retrieval results with Reference format.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827205
+                    },
+                    {
+                        "content": "我可以請幾天假？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827171
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假天數限制\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3835,
+                            "output_tokens": 50,
+                            "total_tokens": 3885,
+                            "prompt_tokens": 3835,
+                            "completion_tokens": 50,
+                            "time": 3.6389388749958016
+                        },
+                        "created_at": 1752827171
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"一、同仁到職當年度即享有一天生日假，生日當月可擇一日請(放)生日假；請假之最小單位為一天。\\n二、生日假於生日當月有效，棄權者不得再補休。\\n三、生日假薪資照給。\"\n}\n{\n  \"score\": 0.67383134,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}\n{\n  \"score\": 0.48483455,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.37600818,\n  \"text\": \"一、公司原則上以星期日為例假日，星期六為休息日。\\n二、例假日不得工作，但是若因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\\n三、例假日工資照給。\"\n}\n{\n  \"score\": 0.3007,\n  \"text\": \"一、休假種類包含：特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n二、請假方法：員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n \\n請假天數，核准主管權限及事前天數辦法如下：\\n請假天數\\t事前天數\\t核准主管權限\\n0<天數≦5\\t三天前\\t部門主管\\n5<天數≦10\\t一週前\\t處級主管\\n天數>10\\t兩週前\\t業務/事業群總經理\\n三、臨時狀況：同仁因突發事件或生病必須於當日請假者，得於當日10:00前以電話向主管報備，並於事後補辦請假手續。\\n四、同仁未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "FB8FvYS8Zh1uNx0W8tEGvtvNgEm5t0iE",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "請假天數限制"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.23489041699212976
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4876,
+                            "output_tokens": 174,
+                            "total_tokens": 5050,
+                            "prompt_tokens": 4876,
+                            "completion_tokens": 174,
+                            "time": 5.045871957991039
+                        },
+                        "created_at": 1752827174
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Retrieved Passages:\n您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n    }\n  ],\n  \"explanation\": \"The passage directly answers the user's question by outlining the different types of leave available and the associated timeframes (one day for birthday leave, eight weeks for maternity leave, and varying amounts for other types of leave).  It also correctly points out that specific details depend on company policy and encourages the user to consult internal regulations or HR. Thus, it is both relevant and sufficient.\",\n  \"sufficient\": true\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3033,
+                            "output_tokens": 286,
+                            "total_tokens": 3319,
+                            "prompt_tokens": 3033,
+                            "completion_tokens": 286,
+                            "time": 8.787498042016523
+                        },
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Relevant Passages:\n[1] 您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n  ],\n  \"final_answer\": \"您好，公司規定如下：\\n\\n*   **生日假：** 一年可以請一天，要在生日當月使用。\\n*   **產假：** 生產前後共八週（包含星期假日），流產假則依照懷孕週數長短有所不同。\\n*   **其他假別：** 像是特休假、事假、病假等等，天數會依照公司規定，需要事先填寫請假單，並經主管核准。請假天數會影響需要提前多久申請，以及要請哪位主管核准。\\n\\n更詳細的規定，建議您參考公司內部規定，或是直接向人資部門詢問喔！\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2828,
+                            "output_tokens": 340,
+                            "total_tokens": 3168,
+                            "prompt_tokens": 2828,
+                            "completion_tokens": 340,
+                            "time": 10.415833791979821
+                        },
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827205
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3089,
+                            "output_tokens": 50,
+                            "total_tokens": 3139,
+                            "prompt_tokens": 3089,
+                            "completion_tokens": 50,
+                            "time": 3.3809816249995492
+                        },
+                        "created_at": 1752827205
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.14941233399440534
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4708,
+                            "output_tokens": 50,
+                            "total_tokens": 4758,
+                            "prompt_tokens": 4708,
+                            "completion_tokens": 50,
+                            "time": 2.4178323750093114
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.08589145800215192
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6325,
+                            "output_tokens": 51,
+                            "total_tokens": 6376,
+                            "prompt_tokens": 6325,
+                            "completion_tokens": 51,
+                            "time": 2.303450082981726
+                        },
+                        "created_at": 1752827211
+                    }
+                ],
+                "tools": [
+                    {
+                        "tool_call_id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "result": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "metrics": {
+                            "time": 0.14941233399440534
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752826980,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": [],
+                        "answered": null,
+                        "external_execution_required": null
+                    },
+                    {
+                        "tool_call_id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "result": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "metrics": {
+                            "time": 0.08589145800215192
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752826980,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": [],
+                        "answered": null,
+                        "external_execution_required": null
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "passages": [
+                        {
+                            "relevant": true,
+                            "text": "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！"
+                        }
+                    ],
+                    "explanation": "The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found. It then suggests contacting HR for accurate information. Therefore, it is relevant, though unfortunately insufficient to answer the user's query.",
+                    "sufficient": false
+                },
+                "content_type": "Criticism",
+                "metrics": {
+                    "input_tokens": [
+                        4487
+                    ],
+                    "output_tokens": [
+                        145
+                    ],
+                    "total_tokens": [
+                        4632
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        4487
+                    ],
+                    "completion_tokens": [
+                        145
+                    ],
+                    "time": [
+                        6.1226521670178045
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "40f5197e-902f-4029-be28-d35b45e9b335",
+                "agent_id": "0c941ec0-c950-4e9e-8d3a-3871c68bea70",
+                "agent_name": "critic_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Critically evaluate whether the retrieved passages are relevant to the user's query.\n2. Critically evaluate whether the retrieved passages are sufficient to answer the user's query.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Retrieved Passages:\n您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n    }\n  ],\n  \"explanation\": \"The passage directly answers the user's question by outlining the different types of leave available and the associated timeframes (one day for birthday leave, eight weeks for maternity leave, and varying amounts for other types of leave).  It also correctly points out that specific details depend on company policy and encourages the user to consult internal regulations or HR. Thus, it is both relevant and sufficient.\",\n  \"sufficient\": true\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 3033,
+                            "output_tokens": 286,
+                            "total_tokens": 3319,
+                            "prompt_tokens": 3033,
+                            "completion_tokens": 286,
+                            "time": 8.787498042016523
+                        },
+                        "created_at": 1752827180
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Relevant Passages:\n[1] 您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n  ],\n  \"final_answer\": \"您好，公司規定如下：\\n\\n*   **生日假：** 一年可以請一天，要在生日當月使用。\\n*   **產假：** 生產前後共八週（包含星期假日），流產假則依照懷孕週數長短有所不同。\\n*   **其他假別：** 像是特休假、事假、病假等等，天數會依照公司規定，需要事先填寫請假單，並經主管核准。請假天數會影響需要提前多久申請，以及要請哪位主管核准。\\n\\n更詳細的規定，建議您參考公司內部規定，或是直接向人資部門詢問喔！\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2828,
+                            "output_tokens": 340,
+                            "total_tokens": 3168,
+                            "prompt_tokens": 2828,
+                            "completion_tokens": 340,
+                            "time": 10.415833791979821
+                        },
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827205
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3089,
+                            "output_tokens": 50,
+                            "total_tokens": 3139,
+                            "prompt_tokens": 3089,
+                            "completion_tokens": 50,
+                            "time": 3.3809816249995492
+                        },
+                        "created_at": 1752827205
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.14941233399440534
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4708,
+                            "output_tokens": 50,
+                            "total_tokens": 4758,
+                            "prompt_tokens": 4708,
+                            "completion_tokens": 50,
+                            "time": 2.4178323750093114
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.08589145800215192
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6325,
+                            "output_tokens": 51,
+                            "total_tokens": 6376,
+                            "prompt_tokens": 6325,
+                            "completion_tokens": 51,
+                            "time": 2.303450082981726
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Retrieved Passages:\n很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n    }\n  ],\n  \"explanation\": \"The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found. It then suggests contacting HR for accurate information. Therefore, it is relevant, though unfortunately insufficient to answer the user's query.\",\n  \"sufficient\": false\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4487,
+                            "output_tokens": 145,
+                            "total_tokens": 4632,
+                            "prompt_tokens": 4487,
+                            "completion_tokens": 145,
+                            "time": 6.1226521670178045
+                        },
+                        "created_at": 1752827214
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！"
+                    ],
+                    "final_answer": "您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！"
+                },
+                "content_type": "RAGFormat",
+                "metrics": {
+                    "input_tokens": [
+                        4223
+                    ],
+                    "output_tokens": [
+                        112
+                    ],
+                    "total_tokens": [
+                        4335
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        4223
+                    ],
+                    "completion_tokens": [
+                        112
+                    ],
+                    "time": [
+                        6.84569874999579
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "1604dfde-46fd-4a94-93e5-45d142e06a14",
+                "agent_id": "112b835f-3b4d-4d44-8ec8-749c9745fda8",
+                "agent_name": "generator_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Generate a final answer based on the retrieved passages.\n2. If the retrieved passages are insufficient, ask follow-up questions to gather more information.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我可以請幾天假？\n## Relevant Passages:\n[1] 您好，關於可以請幾天假，公司有以下規定：\n\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\n\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，關於可以請幾天假，公司有以下規定：\\n\\n*   **生日假：** 到職當年度可以請一天生日假，當月有效。\\n*   **產假：** 生產前後共八週（含例假日），流產假則依照懷孕週數不同而有所差異。\\n*   **其他假期：** 像是特休假、事假、病假等，具體天數則依照公司規定，需要事先填寫請假單並經主管核准。請假天數多寡會影響到需要提前多久申請，以及需要哪位主管核准。\\n\\n詳細的請假天數規定，建議您參考公司內部規定，或向人資部門詢問。\"\n  ],\n  \"final_answer\": \"您好，公司規定如下：\\n\\n*   **生日假：** 一年可以請一天，要在生日當月使用。\\n*   **產假：** 生產前後共八週（包含星期假日），流產假則依照懷孕週數長短有所不同。\\n*   **其他假別：** 像是特休假、事假、病假等等，天數會依照公司規定，需要事先填寫請假單，並經主管核准。請假天數會影響需要提前多久申請，以及要請哪位主管核准。\\n\\n更詳細的規定，建議您參考公司內部規定，或是直接向人資部門詢問喔！\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2828,
+                            "output_tokens": 340,
+                            "total_tokens": 3168,
+                            "prompt_tokens": 2828,
+                            "completion_tokens": 340,
+                            "time": 10.415833791979821
+                        },
+                        "created_at": 1752827190
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827205
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3089,
+                            "output_tokens": 50,
+                            "total_tokens": 3139,
+                            "prompt_tokens": 3089,
+                            "completion_tokens": 50,
+                            "time": 3.3809816249995492
+                        },
+                        "created_at": 1752827205
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.14941233399440534
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4708,
+                            "output_tokens": 50,
+                            "total_tokens": 4758,
+                            "prompt_tokens": 4708,
+                            "completion_tokens": 50,
+                            "time": 2.4178323750093114
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.08589145800215192
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6325,
+                            "output_tokens": 51,
+                            "total_tokens": 6376,
+                            "prompt_tokens": 6325,
+                            "completion_tokens": 51,
+                            "time": 2.303450082981726
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Retrieved Passages:\n很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n    }\n  ],\n  \"explanation\": \"The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found. It then suggests contacting HR for accurate information. Therefore, it is relevant, though unfortunately insufficient to answer the user's query.\",\n  \"sufficient\": false\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4487,
+                            "output_tokens": 145,
+                            "total_tokens": 4632,
+                            "prompt_tokens": 4487,
+                            "completion_tokens": 145,
+                            "time": 6.1226521670178045
+                        },
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Relevant Passages:\n[1] 很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n  ],\n  \"final_answer\": \"您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4223,
+                            "output_tokens": 112,
+                            "total_tokens": 4335,
+                            "prompt_tokens": 4223,
+                            "completion_tokens": 112,
+                            "time": 6.84569874999579
+                        },
+                        "created_at": 1752827225
+                    }
+                ]
+            },
+            {
+                "content": "您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                "content_type": "str",
+                "metrics": {
+                    "input_tokens": [
+                        4555,
+                        6172
+                    ],
+                    "output_tokens": [
+                        50,
+                        55
+                    ],
+                    "total_tokens": [
+                        4605,
+                        6227
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        4555,
+                        6172
+                    ],
+                    "completion_tokens": [
+                        50,
+                        55
+                    ],
+                    "time": [
+                        4.143600625015097,
+                        2.5164454999903683
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "1728e5c7-a60a-43e4-b5dc-a1294ed44edf",
+                "agent_id": "d7ddd4be-afbb-439a-b75b-1f83f299191e",
+                "agent_name": "seeker_agent",
+                "session_id": "session_6",
+                "formatted_tool_calls": [
+                    "retrieve_fps_rules_db(query=特休假申請流程)"
+                ],
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Retrieve relevant documents from the specific vector database. When retrieving from the database, the user's original intent should be preserved as much as possible, and the clarity of the question's meaning should be maintained.\n2. Return all the retrieval results with Reference format.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827255
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827205
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 3089,
+                            "output_tokens": 50,
+                            "total_tokens": 3139,
+                            "prompt_tokens": 3089,
+                            "completion_tokens": 50,
+                            "time": 3.3809816249995492
+                        },
+                        "created_at": 1752827205
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "SbhUawhJahKHo4CDtEQuIZKtApm1r24D",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.14941233399440534
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4708,
+                            "output_tokens": 50,
+                            "total_tokens": 4758,
+                            "prompt_tokens": 4708,
+                            "completion_tokens": 50,
+                            "time": 2.4178323750093114
+                        },
+                        "created_at": 1752827208
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "eM0GsLCcPuJUouXPJTm4VfSx0V9ugMN7",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.08589145800215192
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6325,
+                            "output_tokens": 51,
+                            "total_tokens": 6376,
+                            "prompt_tokens": 6325,
+                            "completion_tokens": 51,
+                            "time": 2.303450082981726
+                        },
+                        "created_at": 1752827211
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Retrieved Passages:\n很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n    }\n  ],\n  \"explanation\": \"The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found. It then suggests contacting HR for accurate information. Therefore, it is relevant, though unfortunately insufficient to answer the user's query.\",\n  \"sufficient\": false\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4487,
+                            "output_tokens": 145,
+                            "total_tokens": 4632,
+                            "prompt_tokens": 4487,
+                            "completion_tokens": 145,
+                            "time": 6.1226521670178045
+                        },
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Relevant Passages:\n[1] 很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n  ],\n  \"final_answer\": \"您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4223,
+                            "output_tokens": 112,
+                            "total_tokens": 4335,
+                            "prompt_tokens": 4223,
+                            "completion_tokens": 112,
+                            "time": 6.84569874999579
+                        },
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827255
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4555,
+                            "output_tokens": 50,
+                            "total_tokens": 4605,
+                            "prompt_tokens": 4555,
+                            "completion_tokens": 50,
+                            "time": 4.143600625015097
+                        },
+                        "created_at": 1752827255
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.22433500000624917
+                        },
+                        "created_at": 1752827259
+                    },
+                    {
+                        "content": "您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6172,
+                            "output_tokens": 55,
+                            "total_tokens": 6227,
+                            "prompt_tokens": 6172,
+                            "completion_tokens": 55,
+                            "time": 2.5164454999903683
+                        },
+                        "created_at": 1752827259
+                    }
+                ],
+                "tools": [
+                    {
+                        "tool_call_id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "result": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "metrics": {
+                            "time": 0.22433500000624917
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752826980,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": [],
+                        "answered": null,
+                        "external_execution_required": null
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "passages": [
+                        {
+                            "relevant": true,
+                            "text": "您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。"
+                        }
+                    ],
+                    "explanation": "The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found in the company regulations. It then suggests contacting HR for accurate information. Therefore, it is relevant, though insufficient to answer the user's query.",
+                    "sufficient": false
+                },
+                "content_type": "Criticism",
+                "metrics": {
+                    "input_tokens": [
+                        2269
+                    ],
+                    "output_tokens": [
+                        152
+                    ],
+                    "total_tokens": [
+                        2421
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        2269
+                    ],
+                    "completion_tokens": [
+                        152
+                    ],
+                    "time": [
+                        5.506861500005471
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "859feeb0-c1ee-4c33-b691-cbd06487bc67",
+                "agent_id": "0c941ec0-c950-4e9e-8d3a-3871c68bea70",
+                "agent_name": "critic_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Critically evaluate whether the retrieved passages are relevant to the user's query.\n2. Critically evaluate whether the retrieved passages are sufficient to answer the user's query.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827262
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Retrieved Passages:\n很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n    }\n  ],\n  \"explanation\": \"The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found. It then suggests contacting HR for accurate information. Therefore, it is relevant, though unfortunately insufficient to answer the user's query.\",\n  \"sufficient\": false\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4487,
+                            "output_tokens": 145,
+                            "total_tokens": 4632,
+                            "prompt_tokens": 4487,
+                            "completion_tokens": 145,
+                            "time": 6.1226521670178045
+                        },
+                        "created_at": 1752827214
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Relevant Passages:\n[1] 很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n  ],\n  \"final_answer\": \"您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4223,
+                            "output_tokens": 112,
+                            "total_tokens": 4335,
+                            "prompt_tokens": 4223,
+                            "completion_tokens": 112,
+                            "time": 6.84569874999579
+                        },
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827255
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4555,
+                            "output_tokens": 50,
+                            "total_tokens": 4605,
+                            "prompt_tokens": 4555,
+                            "completion_tokens": 50,
+                            "time": 4.143600625015097
+                        },
+                        "created_at": 1752827255
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.22433500000624917
+                        },
+                        "created_at": 1752827259
+                    },
+                    {
+                        "content": "您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6172,
+                            "output_tokens": 55,
+                            "total_tokens": 6227,
+                            "prompt_tokens": 6172,
+                            "completion_tokens": 55,
+                            "time": 2.5164454999903683
+                        },
+                        "created_at": 1752827259
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Retrieved Passages:\n您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827262
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。\"\n    }\n  ],\n  \"explanation\": \"The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found in the company regulations. It then suggests contacting HR for accurate information. Therefore, it is relevant, though insufficient to answer the user's query.\",\n  \"sufficient\": false\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2269,
+                            "output_tokens": 152,
+                            "total_tokens": 2421,
+                            "prompt_tokens": 2269,
+                            "completion_tokens": 152,
+                            "time": 5.506861500005471
+                        },
+                        "created_at": 1752827262
+                    }
+                ]
+            },
+            {
+                "content": {
+                    "reference": [
+                        "您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。"
+                    ],
+                    "final_answer": "您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！"
+                },
+                "content_type": "RAGFormat",
+                "metrics": {
+                    "input_tokens": [
+                        2278
+                    ],
+                    "output_tokens": [
+                        116
+                    ],
+                    "total_tokens": [
+                        2394
+                    ],
+                    "audio_tokens": [
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0
+                    ],
+                    "cached_tokens": [
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0
+                    ],
+                    "prompt_tokens": [
+                        2278
+                    ],
+                    "completion_tokens": [
+                        116
+                    ],
+                    "time": [
+                        4.384934834000887
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "2b3f8edb-e71f-4685-9205-dcf56a5b626b",
+                "agent_id": "112b835f-3b4d-4d44-8ec8-749c9745fda8",
+                "agent_name": "generator_agent",
+                "session_id": "session_6",
+                "created_at": 1752826980,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Generate a final answer based on the retrieved passages.\n2. If the retrieved passages are insufficient, ask follow-up questions to gather more information.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827269
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Relevant Passages:\n[1] 很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"很抱歉，目前搜尋到的資料中，沒有關於特休假申請流程的詳細資訊。建議您可以直接向人資部門詢問，以獲得最準確的資訊喔！\"\n  ],\n  \"final_answer\": \"您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 4223,
+                            "output_tokens": 112,
+                            "total_tokens": 4335,
+                            "prompt_tokens": 4223,
+                            "completion_tokens": 112,
+                            "time": 6.84569874999579
+                        },
+                        "created_at": 1752827225
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827255
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "retrieve_fps_rules_db"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 4555,
+                            "output_tokens": 50,
+                            "total_tokens": 4605,
+                            "prompt_tokens": 4555,
+                            "completion_tokens": 50,
+                            "time": 4.143600625015097
+                        },
+                        "created_at": 1752827255
+                    },
+                    {
+                        "content": "{\n  \"score\": 0.7,\n  \"text\": \"公司同仁有下列情形，得強制其退休。\\n一、年齡已達六十五歲者。\\n二、身心障礙不堪勝任工作者。\"\n}\n{\n  \"score\": 0.5521465,\n  \"text\": \"一、薪資採月薪制，破月者薪資以月薪除以30算出日薪資再乘實際工作天數(含工作期間的例假日)。時薪則以日薪除以8計算得之。\\n二、薪資項目主要區分為二類\\n基本薪資：依同仁所任職務之不同所給予之工作報酬稱之。\\n主管加給：付與任管理職的同仁的薪資加給稱之。\\n薪資與職務對照表另行訂定，並依當時之物價指數不同而調整。\"\n}\n{\n  \"score\": 0.3,\n  \"text\": \"一、EMBA \\n1. 資格限定：現職主管或「儲備主管」 \\n2. 提名程序：於每年底進行年度計劃期間，評估「儲備主管」名單，同時由一級主管提名下一年度欲參加EMBA進修的人員。 \\n3. 審核程序：經總經理核准。 \\n4. 上課時間：以晚上或假日上課為原則，若有白天課程，則以個人特休假處理，然一切以不影響工作為基本考量。 \\n二、其他研究所 \\n1. 資格限定：現職同仁服務滿兩年，最近一年考績 A- 等以上；報考和工作相關之研究所。 \\n2. 提名程序：有意報考者須事先和直屬主管討論，並於年底前確定是否在次年報考，主管同意後由主管為其提出申請。 \\n3. 審核程序：經總經理核准 \\n4. 上課時間： \\n在職生：不需全職上課，其餘時間可兼職上班者，若工作性質允許，則按公司兼職作法；若工作性質不允許兼職上班，則視同全職生。 \\n全職生：有意願在畢業後回公司繼續工作者，可提出留職停薪之申請；留職停薪之申請若經核准，同仁須簽署意願書，表明畢業後回公司繼續服務的承諾。留職停薪期間，年資不計，健、勞保暫停。合格證書提出申請。\"\n}\n{\n  \"score\": 0.2675919,\n  \"text\": \"一、平常工作日延長工作時間之工資給付以實際工作時數計算，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍 \\n二、休息日加班者，其延長工作時間之工資給付依下列標準加給：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間第三小時至第八小時支付時薪的1.67倍\\n3. 延長工作時間第九小時至第十二小時支付時薪的2.67倍\\n三、國定假日加班者，加班前八小時除了原有日工資照給外，另外給付一日之加班費；超過八小時部份，每一小時的時薪是：\\n1. 延長工作時間的前兩小時支付時薪的1.34倍\\n2. 延長工作時間再加兩小時則支付時薪的1.67倍\\n四、若因天災事變或突發事件而有勞基法第四十條之狀況時，以日計算延長之工時，其給付除了原有日工資照給外，另外給付一日之加班費，依日平均工資給付，並於事後給予補假休息。\\n五、加班累積時數，可選擇轉換加班補休或加班費。\\n    1. 若選擇補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休期限以約定年度特休假使用期限之迄日做為加班補休之迄日。\\n    2. 前項補休期限屆期或契約終止時，將依加班當時之薪資結算加班費發給員工。\\n\\n一、國定假日或特休假期間(不含例假日)\\n1. 非工作日之延長工作時間應依平均工資再加給一日之工資。\\n2. 因工作進度之需要而有延長工作時間之必要時，依照加班程序申報加班。\\n3. 員工得因健康或其他正當理由，不接受正常工作時間以外之工作。\\n二、休息日期間\\n    延長工作時間的前兩小時支付時薪的1.34倍；第三小時至第八小時支付時薪的1.67倍；第九小時至第十二小時支付時薪的2.67倍。\\n三、天災事變\\n    因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止員工例假日、國定假日、特休期間之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\\n前項停止員工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。\"\n}\n{\n  \"score\": 0.264373,\n  \"text\": \"一、同仁本人生產前後，產假八週(含星期例假日)。\\n二、同仁本人妊娠三個月以上流產者，給予產假四星期。(含星期例假日)\\n三、妊娠二個月以上未滿三個月流產者，給予產假一星期。(含星期例假日，不給薪)\\n四、妊娠未滿二個月流產者，給予產假五日。(含星期例假日，不給薪)\\n五、第一項、第二項產假期間薪資，對已任職滿六個月以上同仁，薪資照給，未滿六個月者減半發給。\"\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "2i1UpqhMA9ek87oWEgyhHmyJlfNUNsd4",
+                        "tool_name": "retrieve_fps_rules_db",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 0.22433500000624917
+                        },
+                        "created_at": 1752827259
+                    },
+                    {
+                        "content": "您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 6172,
+                            "output_tokens": 55,
+                            "total_tokens": 6227,
+                            "prompt_tokens": 6172,
+                            "completion_tokens": 55,
+                            "time": 2.5164454999903683
+                        },
+                        "created_at": 1752827259
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Retrieved Passages:\n您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827262
+                    },
+                    {
+                        "content": "{\n  \"passages\": [\n    {\n      \"relevant\": true,\n      \"text\": \"您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。\"\n    }\n  ],\n  \"explanation\": \"The passage directly addresses the user's request for information about taking special leave (特休假) but states that no details about the application process could be found in the company regulations. It then suggests contacting HR for accurate information. Therefore, it is relevant, though insufficient to answer the user's query.\",\n  \"sufficient\": false\n}",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2269,
+                            "output_tokens": 152,
+                            "total_tokens": 2421,
+                            "prompt_tokens": 2269,
+                            "completion_tokens": 152,
+                            "time": 5.506861500005471
+                        },
+                        "created_at": 1752827262
+                    },
+                    {
+                        "content": "The user's query and the retrieved passages are as follows:\n## User Query: 我想請特休假\n## Relevant Passages:\n[1] 您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827269
+                    },
+                    {
+                        "content": "{\n  \"reference\": [\n    \"您好，很抱歉，目前在公司規章中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們可以提供您最準確的申請方式。\"\n  ],\n  \"final_answer\": \"您好，很抱歉，我目前在資料庫中找不到關於特休假申請流程的詳細資訊。建議您直接向人資部門詢問，他們會提供您最準確的申請方式喔！\"\n}",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2278,
+                            "output_tokens": 116,
+                            "total_tokens": 2394,
+                            "prompt_tokens": 2278,
+                            "completion_tokens": 116,
+                            "time": 4.384934834000887
+                        },
+                        "created_at": 1752827269
+                    }
+                ],
+                "tools": []
+            }
+        ]
+    },
+    "session_data": {
+        "session_state": {
+            "current_user_id": "user_1",
+            "current_session_id": "session_6"
+        },
+        "session_metrics": {
+            "input_tokens": 59937,
+            "output_tokens": 2885,
+            "total_tokens": 62822,
+            "audio_tokens": 0,
+            "input_audio_tokens": 0,
+            "output_audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "reasoning_tokens": 0,
+            "prompt_tokens": 59937,
+            "completion_tokens": 2885,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null,
+            "additional_metrics": null,
+            "time": 106.39708871001494,
+            "time_to_first_token": null,
+            "timer": null
+        }
+    },
+    "extra_data": null,
+    "created_at": 1752827273,
+    "updated_at": 1752827273,
+    "agent_id": "112b835f-3b4d-4d44-8ec8-749c9745fda8",
+    "agent_data": {
+        "name": "generator_agent",
+        "agent_id": "112b835f-3b4d-4d44-8ec8-749c9745fda8",
+        "model": {
+            "name": "OpenAILike",
+            "id": "openai/gemma3:27b-it-qat",
+            "provider": "OpenAI"
+        }
+    }
+}

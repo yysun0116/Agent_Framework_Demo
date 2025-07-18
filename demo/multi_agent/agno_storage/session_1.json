@@ -1,0 +1,430 @@
+{
+    "session_id": "session_1",
+    "user_id": "user_1",
+    "team_session_id": null,
+    "workflow_session_id": null,
+    "memory": {
+        "summaries": {},
+        "memories": {},
+        "runs": [
+            {
+                "content": "reference=['您好，關於請假規定，我從公司內部規章中找到以下資訊：\\n\\n**工作時間規定：**\\n*   每週工作時數不得超過四十小時。\\n*   每日工作時間為八小時，時間為 08:30 開始上班，12:00 午休，13:00 下午工作開始，15:00 下午休息，15:15 繼續工作至 17:30 下班。\\n*   對於未滿一歲的子女需要親自哺乳的員工，公司會提供每日額外的哺乳時間（每次 30 分鐘，視為工作時間）。\\n*   撫育未滿三歲子女的員工可以申請減少工作時間（每天一小時，不計報酬）或調整工作時間。\\n\\n**休假種類：**\\n*   包含特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n\\n**請假流程：**\\n*   員工需要事先填寫請假單或口頭說明理由，經核定後才能請假。\\n*   不同天數的請假需要提前不同的天數申請，並由不同層級的主管核准（0-5 天由部門主管核准，5-10 天由處級主管核准，超過 10 天由業務/事業群總經理核准）。\\n*   臨時狀況下，員工可以於當日 10:00 前以電話向主管報備，並事後補辦手續。\\n*   未依規定辦理請假手續，且事後未補辦並說明原因，將視同曠職。\\n\\n**其他：**\\n*   公傷假之醫療費用以勞工保險及公司團保負擔，其他相關規定比照災害傷病補償辦法。\\n*   紀念日、勞動節日及政府規定應放假之日為放假日。\\n\\n希望這些資訊對您有幫助！如果您還有其他問題，請隨時提出。'] final_answer='您好！關於公司的請假規定，我整理如下：\\n\\n**工作時間：**\\n* 每週工作時間不超過 40 小時。\\n* 每日工作時間為 08:30 至 17:30，中間有午休和下午休息時間。\\n* 未滿一歲子女的員工有哺乳時間（每日 30 分鐘，算工作時間）。\\n* 撫育未滿三歲子女的員工可以申請減少工時（每日一小時，無薪）或調整工時。\\n\\n**休假種類：**\\n共有 14 種休假，包含特休、生日假、病假、事假、家庭照顧假等等。\\n\\n**請假流程：**\\n* 需事先填寫請假單或口頭告知理由，經主管核准。\\n* 請假天數不同，主管核准層級也不同：0-5 天由部門主管，5-10 天由處級主管，超過 10 天由總經理核准。\\n* 臨時狀況可當日 10:00 前電話報備，事後補辦手續。\\n* 未依規定請假且未補辦，會被視為曠職。\\n\\n**其他：**\\n* 公傷假的醫療費用由勞保和公司團保負擔。\\n* 紀念日、勞動節日及政府規定放假日為放假日。\\n\\n請問您想了解哪方面的請假規定呢？例如，您是想知道哪一種假別的申請流程，或是關於減少工時的細節嗎？'您好！根據公司規定，請假有很多種類，流程也有些細節需要注意。簡單來說，需要事先申請，天數不同主管核准層級不同，臨時狀況可以先電話報備再補辦。請問您想請哪一種假呢？或者您想了解關於減少工時、調整工時的細節嗎？我可以更詳細地說明。",
+                "content_type": "str",
+                "metrics": {
+                    "input_tokens": [
+                        380,
+                        1402
+                    ],
+                    "output_tokens": [
+                        43,
+                        90
+                    ],
+                    "total_tokens": [
+                        423,
+                        1492
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        380,
+                        1402
+                    ],
+                    "completion_tokens": [
+                        43,
+                        90
+                    ],
+                    "time": [
+                        2.247476332995575,
+                        5.857190917013213
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "e52d6a29-3da2-4a21-89ff-fc580bbf5d98",
+                "agent_id": "03320338-80c5-44fa-b9ac-f9501e69e04a",
+                "agent_name": "assistant_agent",
+                "session_id": "session_1",
+                "formatted_tool_calls": [
+                    "rag(query=請假規定)"
+                ],
+                "created_at": 1752827582,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827615
+                    },
+                    {
+                        "content": "我想要請假，有沒有什麼限制？",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827615
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "5ymbzpyezW7ExGOzYVwCVBjhMWDZe7a9",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "rag"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 380,
+                            "output_tokens": 43,
+                            "total_tokens": 423,
+                            "prompt_tokens": 380,
+                            "completion_tokens": 43,
+                            "time": 2.247476332995575
+                        },
+                        "created_at": 1752827615
+                    },
+                    {
+                        "content": "reference=['您好，關於請假規定，我從公司內部規章中找到以下資訊：\\n\\n**工作時間規定：**\\n*   每週工作時數不得超過四十小時。\\n*   每日工作時間為八小時，時間為 08:30 開始上班，12:00 午休，13:00 下午工作開始，15:00 下午休息，15:15 繼續工作至 17:30 下班。\\n*   對於未滿一歲的子女需要親自哺乳的員工，公司會提供每日額外的哺乳時間（每次 30 分鐘，視為工作時間）。\\n*   撫育未滿三歲子女的員工可以申請減少工作時間（每天一小時，不計報酬）或調整工作時間。\\n\\n**休假種類：**\\n*   包含特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n\\n**請假流程：**\\n*   員工需要事先填寫請假單或口頭說明理由，經核定後才能請假。\\n*   不同天數的請假需要提前不同的天數申請，並由不同層級的主管核准（0-5 天由部門主管核准，5-10 天由處級主管核准，超過 10 天由業務/事業群總經理核准）。\\n*   臨時狀況下，員工可以於當日 10:00 前以電話向主管報備，並事後補辦手續。\\n*   未依規定辦理請假手續，且事後未補辦並說明原因，將視同曠職。\\n\\n**其他：**\\n*   公傷假之醫療費用以勞工保險及公司團保負擔，其他相關規定比照災害傷病補償辦法。\\n*   紀念日、勞動節日及政府規定應放假之日為放假日。\\n\\n希望這些資訊對您有幫助！如果您還有其他問題，請隨時提出。'] final_answer='您好！關於公司的請假規定，我整理如下：\\n\\n**工作時間：**\\n* 每週工作時間不超過 40 小時。\\n* 每日工作時間為 08:30 至 17:30，中間有午休和下午休息時間。\\n* 未滿一歲子女的員工有哺乳時間（每日 30 分鐘，算工作時間）。\\n* 撫育未滿三歲子女的員工可以申請減少工時（每日一小時，無薪）或調整工時。\\n\\n**休假種類：**\\n共有 14 種休假，包含特休、生日假、病假、事假、家庭照顧假等等。\\n\\n**請假流程：**\\n* 需事先填寫請假單或口頭告知理由，經主管核准。\\n* 請假天數不同，主管核准層級也不同：0-5 天由部門主管，5-10 天由處級主管，超過 10 天由總經理核准。\\n* 臨時狀況可當日 10:00 前電話報備，事後補辦手續。\\n* 未依規定請假且未補辦，會被視為曠職。\\n\\n**其他：**\\n* 公傷假的醫療費用由勞保和公司團保負擔。\\n* 紀念日、勞動節日及政府規定放假日為放假日。\\n\\n請問您想了解哪方面的請假規定呢？例如，您是想知道哪一種假別的申請流程，或是關於減少工時的細節嗎？'",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "5ymbzpyezW7ExGOzYVwCVBjhMWDZe7a9",
+                        "tool_name": "rag",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 79.83021849999204
+                        },
+                        "created_at": 1752827698
+                    },
+                    {
+                        "content": "您好！根據公司規定，請假有很多種類，流程也有些細節需要注意。簡單來說，需要事先申請，天數不同主管核准層級不同，臨時狀況可以先電話報備再補辦。請問您想請哪一種假呢？或者您想了解關於減少工時、調整工時的細節嗎？我可以更詳細地說明。",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 1402,
+                            "output_tokens": 90,
+                            "total_tokens": 1492,
+                            "prompt_tokens": 1402,
+                            "completion_tokens": 90,
+                            "time": 5.857190917013213
+                        },
+                        "created_at": 1752827698
+                    }
+                ],
+                "tools": [
+                    {
+                        "tool_call_id": "5ymbzpyezW7ExGOzYVwCVBjhMWDZe7a9",
+                        "tool_name": "rag",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "result": "reference=['您好，關於請假規定，我從公司內部規章中找到以下資訊：\\n\\n**工作時間規定：**\\n*   每週工作時數不得超過四十小時。\\n*   每日工作時間為八小時，時間為 08:30 開始上班，12:00 午休，13:00 下午工作開始，15:00 下午休息，15:15 繼續工作至 17:30 下班。\\n*   對於未滿一歲的子女需要親自哺乳的員工，公司會提供每日額外的哺乳時間（每次 30 分鐘，視為工作時間）。\\n*   撫育未滿三歲子女的員工可以申請減少工作時間（每天一小時，不計報酬）或調整工作時間。\\n\\n**休假種類：**\\n*   包含特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n\\n**請假流程：**\\n*   員工需要事先填寫請假單或口頭說明理由，經核定後才能請假。\\n*   不同天數的請假需要提前不同的天數申請，並由不同層級的主管核准（0-5 天由部門主管核准，5-10 天由處級主管核准，超過 10 天由業務/事業群總經理核准）。\\n*   臨時狀況下，員工可以於當日 10:00 前以電話向主管報備，並事後補辦手續。\\n*   未依規定辦理請假手續，且事後未補辦並說明原因，將視同曠職。\\n\\n**其他：**\\n*   公傷假之醫療費用以勞工保險及公司團保負擔，其他相關規定比照災害傷病補償辦法。\\n*   紀念日、勞動節日及政府規定應放假之日為放假日。\\n\\n希望這些資訊對您有幫助！如果您還有其他問題，請隨時提出。'] final_answer='您好！關於公司的請假規定，我整理如下：\\n\\n**工作時間：**\\n* 每週工作時間不超過 40 小時。\\n* 每日工作時間為 08:30 至 17:30，中間有午休和下午休息時間。\\n* 未滿一歲子女的員工有哺乳時間（每日 30 分鐘，算工作時間）。\\n* 撫育未滿三歲子女的員工可以申請減少工時（每日一小時，無薪）或調整工時。\\n\\n**休假種類：**\\n共有 14 種休假，包含特休、生日假、病假、事假、家庭照顧假等等。\\n\\n**請假流程：**\\n* 需事先填寫請假單或口頭告知理由，經主管核准。\\n* 請假天數不同，主管核准層級也不同：0-5 天由部門主管，5-10 天由處級主管，超過 10 天由總經理核准。\\n* 臨時狀況可當日 10:00 前電話報備，事後補辦手續。\\n* 未依規定請假且未補辦，會被視為曠職。\\n\\n**其他：**\\n* 公傷假的醫療費用由勞保和公司團保負擔。\\n* 紀念日、勞動節日及政府規定放假日為放假日。\\n\\n請問您想了解哪方面的請假規定呢？例如，您是想知道哪一種假別的申請流程，或是關於減少工時的細節嗎？'",
+                        "metrics": {
+                            "time": 79.83021849999204
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752827582,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": [],
+                        "answered": null,
+                        "external_execution_required": null
+                    }
+                ]
+            },
+            {
+                "content": "reference=['您好，關於特休假申請流程，從公司內部規章中找到的資訊如下：\\n\\n**請假天數、事前天數及核准主管權限：**\\n*   0-5 天：提前三天申請，由部門主管核准。\\n*   5-10 天：提前一週申請，由處級主管核准。\\n*   超過 10 天：提前兩週申請，由業務/事業群總經理核准。\\n\\n**請假方法：**\\n員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n\\n**臨時狀況：**\\n同仁因突發事件或生病必須於當日請假者，得於當日 10:00 前以電話向主管報備，並於事後補辦請假手續。\\n\\n**注意事項：**\\n未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\\n\\n請您務必按照上述流程提前申請並獲得主管核准，以確保您的特休假權益。'] final_answer='您好！關於特休假申請流程，我整理如下：\\n\\n**申請流程：**\\n*   您需要事先填寫請假單，或是口頭向主管說明請假理由，經主管核准後才能請假。\\n\\n**申請時間及主管權限：**\\n*   0-5 天：需要提前三天申請，由部門主管核准。\\n*   5-10 天：需要提前一週申請，由處級主管核准。\\n*   超過 10 天：需要提前兩週申請，由業務/事業群總經理核准。\\n\\n**臨時狀況：**\\n*   如果遇到突發事件或生病，當日 10:00 前可以先電話向主管報備，之後再補辦請假手續。\\n\\n**注意事項：**\\n*   請務必按照規定辦理請假手續，若未依規定且事後未補辦，會被視為曠職喔！\\n\\n請問您還有其他關於特休假的疑問嗎？例如，想確認請假單在哪裡可以取得，或是想知道是否有其他相關的規定呢？'您好！要請特休假的話，您需要事先填寫請假單，或是口頭向主管說明請假理由，經主管核准後才能請假喔！\n\n*   如果請 0-5 天，需要提前三天申請，由部門主管核准。\n*   如果請 5-10 天，需要提前一週申請，由處級主管核准。\n*   如果請超過 10 天，需要提前兩週申請，由業務/事業群總經理核准。\n\n如果遇到突發事件，當日 10:00 前可以先電話報備，之後再補辦手續。\n\n記得要按照規定辦理，不然會被視為曠職喔！請問您還有其他問題嗎？例如，想知道請假單在哪裡可以取得嗎？",
+                "content_type": "str",
+                "metrics": {
+                    "input_tokens": [
+                        1497,
+                        2193
+                    ],
+                    "output_tokens": [
+                        44,
+                        198
+                    ],
+                    "total_tokens": [
+                        1541,
+                        2391
+                    ],
+                    "audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "input_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "output_audio_tokens": [
+                        0,
+                        0
+                    ],
+                    "cached_tokens": [
+                        0,
+                        0
+                    ],
+                    "cache_write_tokens": [
+                        0,
+                        0
+                    ],
+                    "reasoning_tokens": [
+                        0,
+                        0
+                    ],
+                    "prompt_tokens": [
+                        1497,
+                        2193
+                    ],
+                    "completion_tokens": [
+                        44,
+                        198
+                    ],
+                    "time": [
+                        3.5846965840028133,
+                        12.987733541987836
+                    ]
+                },
+                "model": "openai/gemma3:27b-it-qat",
+                "model_provider": "OpenAI",
+                "run_id": "4a24c82c-27a9-4e24-9749-c4ffc7456012",
+                "agent_id": "03320338-80c5-44fa-b9ac-f9501e69e04a",
+                "agent_name": "assistant_agent",
+                "session_id": "session_1",
+                "formatted_tool_calls": [
+                    "rag(query=特休假申請流程)"
+                ],
+                "created_at": 1752827582,
+                "status": "RUNNING",
+                "messages": [
+                    {
+                        "content": "<instructions>\nYou are a helpful and intelligent assistant. The user you are helping speaks Traditional Chinese and comes from Taiwan, so in most cases, you should respond in Traditional Chinese. \nBehavior Rules: \n1. Direct Answering: If the question is clear and within your knowledge, answer directly.\n2. Clarification: If the question is vague or unclear, ask clarifying questions to understand the user’s intent before responding.\n3. Retrieval: If the question requires specialized or external knowledge, use the `rag` to obtain an answer based on relevant information retrieved from the database. Return the result with `RAGFormat` format.\n\n</instructions>",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "system",
+                        "created_at": 1752827731
+                    },
+                    {
+                        "content": "我想要請假，有沒有什麼限制？",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827615
+                    },
+                    {
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "5ymbzpyezW7ExGOzYVwCVBjhMWDZe7a9",
+                                "function": {
+                                    "arguments": "{\"query\":\"請假規定\"}",
+                                    "name": "rag"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 380,
+                            "output_tokens": 43,
+                            "total_tokens": 423,
+                            "prompt_tokens": 380,
+                            "completion_tokens": 43,
+                            "time": 2.247476332995575
+                        },
+                        "created_at": 1752827615
+                    },
+                    {
+                        "content": "reference=['您好，關於請假規定，我從公司內部規章中找到以下資訊：\\n\\n**工作時間規定：**\\n*   每週工作時數不得超過四十小時。\\n*   每日工作時間為八小時，時間為 08:30 開始上班，12:00 午休，13:00 下午工作開始，15:00 下午休息，15:15 繼續工作至 17:30 下班。\\n*   對於未滿一歲的子女需要親自哺乳的員工，公司會提供每日額外的哺乳時間（每次 30 分鐘，視為工作時間）。\\n*   撫育未滿三歲子女的員工可以申請減少工作時間（每天一小時，不計報酬）或調整工作時間。\\n\\n**休假種類：**\\n*   包含特休假、生日假、普通傷病假、事假、家庭照顧假、婚假、喪假、產假、陪產假、產檢假、安胎假、公傷假、生理假、公假共十四種。\\n\\n**請假流程：**\\n*   員工需要事先填寫請假單或口頭說明理由，經核定後才能請假。\\n*   不同天數的請假需要提前不同的天數申請，並由不同層級的主管核准（0-5 天由部門主管核准，5-10 天由處級主管核准，超過 10 天由業務/事業群總經理核准）。\\n*   臨時狀況下，員工可以於當日 10:00 前以電話向主管報備，並事後補辦手續。\\n*   未依規定辦理請假手續，且事後未補辦並說明原因，將視同曠職。\\n\\n**其他：**\\n*   公傷假之醫療費用以勞工保險及公司團保負擔，其他相關規定比照災害傷病補償辦法。\\n*   紀念日、勞動節日及政府規定應放假之日為放假日。\\n\\n希望這些資訊對您有幫助！如果您還有其他問題，請隨時提出。'] final_answer='您好！關於公司的請假規定，我整理如下：\\n\\n**工作時間：**\\n* 每週工作時間不超過 40 小時。\\n* 每日工作時間為 08:30 至 17:30，中間有午休和下午休息時間。\\n* 未滿一歲子女的員工有哺乳時間（每日 30 分鐘，算工作時間）。\\n* 撫育未滿三歲子女的員工可以申請減少工時（每日一小時，無薪）或調整工時。\\n\\n**休假種類：**\\n共有 14 種休假，包含特休、生日假、病假、事假、家庭照顧假等等。\\n\\n**請假流程：**\\n* 需事先填寫請假單或口頭告知理由，經主管核准。\\n* 請假天數不同，主管核准層級也不同：0-5 天由部門主管，5-10 天由處級主管，超過 10 天由總經理核准。\\n* 臨時狀況可當日 10:00 前電話報備，事後補辦手續。\\n* 未依規定請假且未補辦，會被視為曠職。\\n\\n**其他：**\\n* 公傷假的醫療費用由勞保和公司團保負擔。\\n* 紀念日、勞動節日及政府規定放假日為放假日。\\n\\n請問您想了解哪方面的請假規定呢？例如，您是想知道哪一種假別的申請流程，或是關於減少工時的細節嗎？'",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "5ymbzpyezW7ExGOzYVwCVBjhMWDZe7a9",
+                        "tool_name": "rag",
+                        "tool_args": {
+                            "query": "請假規定"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 79.83021849999204
+                        },
+                        "created_at": 1752827698
+                    },
+                    {
+                        "content": "您好！根據公司規定，請假有很多種類，流程也有些細節需要注意。簡單來說，需要事先申請，天數不同主管核准層級不同，臨時狀況可以先電話報備再補辦。請問您想請哪一種假呢？或者您想了解關於減少工時、調整工時的細節嗎？我可以更詳細地說明。",
+                        "from_history": true,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 1402,
+                            "output_tokens": 90,
+                            "total_tokens": 1492,
+                            "prompt_tokens": 1402,
+                            "completion_tokens": 90,
+                            "time": 5.857190917013213
+                        },
+                        "created_at": 1752827698
+                    },
+                    {
+                        "content": "我想請特休假",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "user",
+                        "created_at": 1752827731
+                    },
+                    {
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "tool_calls": [
+                            {
+                                "id": "hwBPafZhsbnVwHKMetAO5lKLb565g3wM",
+                                "function": {
+                                    "arguments": "{\"query\":\"特休假申請流程\"}",
+                                    "name": "rag"
+                                },
+                                "type": "function"
+                            }
+                        ],
+                        "metrics": {
+                            "input_tokens": 1497,
+                            "output_tokens": 44,
+                            "total_tokens": 1541,
+                            "prompt_tokens": 1497,
+                            "completion_tokens": 44,
+                            "time": 3.5846965840028133
+                        },
+                        "created_at": 1752827731
+                    },
+                    {
+                        "content": "reference=['您好，關於特休假申請流程，從公司內部規章中找到的資訊如下：\\n\\n**請假天數、事前天數及核准主管權限：**\\n*   0-5 天：提前三天申請，由部門主管核准。\\n*   5-10 天：提前一週申請，由處級主管核准。\\n*   超過 10 天：提前兩週申請，由業務/事業群總經理核准。\\n\\n**請假方法：**\\n員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n\\n**臨時狀況：**\\n同仁因突發事件或生病必須於當日請假者，得於當日 10:00 前以電話向主管報備，並於事後補辦請假手續。\\n\\n**注意事項：**\\n未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\\n\\n請您務必按照上述流程提前申請並獲得主管核准，以確保您的特休假權益。'] final_answer='您好！關於特休假申請流程，我整理如下：\\n\\n**申請流程：**\\n*   您需要事先填寫請假單，或是口頭向主管說明請假理由，經主管核准後才能請假。\\n\\n**申請時間及主管權限：**\\n*   0-5 天：需要提前三天申請，由部門主管核准。\\n*   5-10 天：需要提前一週申請，由處級主管核准。\\n*   超過 10 天：需要提前兩週申請，由業務/事業群總經理核准。\\n\\n**臨時狀況：**\\n*   如果遇到突發事件或生病，當日 10:00 前可以先電話向主管報備，之後再補辦請假手續。\\n\\n**注意事項：**\\n*   請務必按照規定辦理請假手續，若未依規定且事後未補辦，會被視為曠職喔！\\n\\n請問您還有其他關於特休假的疑問嗎？例如，想確認請假單在哪裡可以取得，或是想知道是否有其他相關的規定呢？'",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "tool",
+                        "tool_call_id": "hwBPafZhsbnVwHKMetAO5lKLb565g3wM",
+                        "tool_name": "rag",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "metrics": {
+                            "time": 54.18147587502608
+                        },
+                        "created_at": 1752827788
+                    },
+                    {
+                        "content": "您好！要請特休假的話，您需要事先填寫請假單，或是口頭向主管說明請假理由，經主管核准後才能請假喔！\n\n*   如果請 0-5 天，需要提前三天申請，由部門主管核准。\n*   如果請 5-10 天，需要提前一週申請，由處級主管核准。\n*   如果請超過 10 天，需要提前兩週申請，由業務/事業群總經理核准。\n\n如果遇到突發事件，當日 10:00 前可以先電話報備，之後再補辦手續。\n\n記得要按照規定辦理，不然會被視為曠職喔！請問您還有其他問題嗎？例如，想知道請假單在哪裡可以取得嗎？",
+                        "from_history": false,
+                        "stop_after_tool_call": false,
+                        "role": "assistant",
+                        "metrics": {
+                            "input_tokens": 2193,
+                            "output_tokens": 198,
+                            "total_tokens": 2391,
+                            "prompt_tokens": 2193,
+                            "completion_tokens": 198,
+                            "time": 12.987733541987836
+                        },
+                        "created_at": 1752827788
+                    }
+                ],
+                "tools": [
+                    {
+                        "tool_call_id": "hwBPafZhsbnVwHKMetAO5lKLb565g3wM",
+                        "tool_name": "rag",
+                        "tool_args": {
+                            "query": "特休假申請流程"
+                        },
+                        "tool_call_error": false,
+                        "result": "reference=['您好，關於特休假申請流程，從公司內部規章中找到的資訊如下：\\n\\n**請假天數、事前天數及核准主管權限：**\\n*   0-5 天：提前三天申請，由部門主管核准。\\n*   5-10 天：提前一週申請，由處級主管核准。\\n*   超過 10 天：提前兩週申請，由業務/事業群總經理核准。\\n\\n**請假方法：**\\n員工因故必須請假者，應事先填寫請假單或口頭敘明理由經核定後方可離開工作崗位或不出勤。\\n\\n**臨時狀況：**\\n同仁因突發事件或生病必須於當日請假者，得於當日 10:00 前以電話向主管報備，並於事後補辦請假手續。\\n\\n**注意事項：**\\n未依規定辦理請假手續者，事後又不補辦請假手續並說明原因者，視同曠職。\\n\\n請您務必按照上述流程提前申請並獲得主管核准，以確保您的特休假權益。'] final_answer='您好！關於特休假申請流程，我整理如下：\\n\\n**申請流程：**\\n*   您需要事先填寫請假單，或是口頭向主管說明請假理由，經主管核准後才能請假。\\n\\n**申請時間及主管權限：**\\n*   0-5 天：需要提前三天申請，由部門主管核准。\\n*   5-10 天：需要提前一週申請，由處級主管核准。\\n*   超過 10 天：需要提前兩週申請，由業務/事業群總經理核准。\\n\\n**臨時狀況：**\\n*   如果遇到突發事件或生病，當日 10:00 前可以先電話向主管報備，之後再補辦請假手續。\\n\\n**注意事項：**\\n*   請務必按照規定辦理請假手續，若未依規定且事後未補辦，會被視為曠職喔！\\n\\n請問您還有其他關於特休假的疑問嗎？例如，想確認請假單在哪裡可以取得，或是想知道是否有其他相關的規定呢？'",
+                        "metrics": {
+                            "time": 54.18147587502608
+                        },
+                        "stop_after_tool_call": false,
+                        "created_at": 1752827582,
+                        "requires_confirmation": null,
+                        "confirmed": null,
+                        "confirmation_note": null,
+                        "requires_user_input": null,
+                        "user_input_schema": null,
+                        "answered": null,
+                        "external_execution_required": null
+                    }
+                ]
+            }
+        ]
+    },
+    "session_data": {
+        "session_state": {
+            "current_user_id": "user_1",
+            "current_session_id": "session_1"
+        },
+        "session_metrics": {
+            "input_tokens": 5472,
+            "output_tokens": 375,
+            "total_tokens": 5847,
+            "audio_tokens": 0,
+            "input_audio_tokens": 0,
+            "output_audio_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "reasoning_tokens": 0,
+            "prompt_tokens": 5472,
+            "completion_tokens": 375,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null,
+            "additional_metrics": null,
+            "time": 24.677097375999438,
+            "time_to_first_token": null,
+            "timer": null
+        }
+    },
+    "extra_data": null,
+    "created_at": 1752827801,
+    "updated_at": 1752827801,
+    "agent_id": "03320338-80c5-44fa-b9ac-f9501e69e04a",
+    "agent_data": {
+        "name": "assistant_agent",
+        "agent_id": "03320338-80c5-44fa-b9ac-f9501e69e04a",
+        "model": {
+            "name": "OpenAILike",
+            "provider": "OpenAI",
+            "id": "openai/gemma3:27b-it-qat"
+        }
+    }
+}
